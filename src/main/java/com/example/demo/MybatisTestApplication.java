@@ -6,7 +6,7 @@ import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.context.annotation.ComponentScan;
 
 //@MapperScan("com.test.dao")
-//@ComponentScan("com")
+@ComponentScan("com")
 @SpringBootApplication
 public class MybatisTestApplication {
 

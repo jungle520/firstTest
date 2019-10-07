@@ -114,12 +114,31 @@
 			<artifactId>quartz</artifactId>
 			<version>2.3.0</version>
 		</dependency>
+        <!--mail -->
+		<dependency>
+			<groupId>org.springframework.boot</groupId>
+			<artifactId>spring-boot-starter-mail</artifactId>
+		</dependency>
 
 		<dependency>
 		<groupId>org.springframework.boot</groupId>
 		<artifactId>spring-boot-starter-aop</artifactId>
 	</dependency>
-</dependencies>
+		<dependency>
+			<groupId>junit</groupId>
+			<artifactId>junit</artifactId>
+		</dependency>
+		<dependency>
+			<groupId>org.springframework.boot</groupId>
+			<artifactId>spring-boot-test</artifactId>
+			<version>2.1.8.RELEASE</version>
+		</dependency>
+		<dependency>
+			<groupId>org.springframework</groupId>
+			<artifactId>spring-test</artifactId>
+			<version>5.1.9.RELEASE</version>
+		</dependency>
+	</dependencies>
 
 	<build>
 		<plugins>

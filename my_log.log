@@ -1,81 +1,143 @@
-21:01:10.076[INFO ][main]o.s.b.t.c.SpringBootTestContextBootstrapper - Neither @ContextConfiguration nor @ContextHierarchy found for test class [com.example.demo.MybatisTestApplicationTests], using SpringBootContextLoader
-21:01:10.110[INFO ][main]o.s.t.c.s.AbstractContextLoader - Could not detect default resource locations for test class [com.example.demo.MybatisTestApplicationTests]: no resource found for suffixes {-context.xml, Context.groovy}.
-21:01:10.111[INFO ][main]o.s.t.c.s.AnnotationConfigContextLoaderUtils - Could not detect default configuration classes for test class [com.example.demo.MybatisTestApplicationTests]: MybatisTestApplicationTests does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
-21:01:10.213[INFO ][main]o.s.b.t.c.SpringBootTestContextBootstrapper - Found @SpringBootConfiguration com.example.demo.MybatisTestApplication for test class com.example.demo.MybatisTestApplicationTests
-21:01:10.323[INFO ][main]o.s.b.t.c.SpringBootTestContextBootstrapper - Loaded default TestExecutionListener class names from location [META-INF/spring.factories]: [org.springframework.boot.test.mock.mockito.MockitoTestExecutionListener, org.springframework.boot.test.mock.mockito.ResetMocksTestExecutionListener, org.springframework.boot.test.autoconfigure.restdocs.RestDocsTestExecutionListener, org.springframework.boot.test.autoconfigure.web.client.MockRestServiceServerResetTestExecutionListener, org.springframework.boot.test.autoconfigure.web.servlet.MockMvcPrintOnlyOnFailureTestExecutionListener, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverTestExecutionListener, org.springframework.test.context.web.ServletTestExecutionListener, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener, org.springframework.test.context.support.DependencyInjectionTestExecutionListener, org.springframework.test.context.support.DirtiesContextTestExecutionListener, org.springframework.test.context.transaction.TransactionalTestExecutionListener, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener]
-21:01:10.344[INFO ][main]o.s.b.t.c.SpringBootTestContextBootstrapper - Using TestExecutionListeners: [org.springframework.test.context.web.ServletTestExecutionListener@7ea9e1e2, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener@24fcf36f, org.springframework.boot.test.mock.mockito.MockitoTestExecutionListener@10feca44, org.springframework.boot.test.autoconfigure.SpringBootDependencyInjectionTestExecutionListener@3fb1549b, org.springframework.test.context.support.DirtiesContextTestExecutionListener@ea6147e, org.springframework.test.context.transaction.TransactionalTestExecutionListener@4d02f94e, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener@2b48a640, org.springframework.boot.test.mock.mockito.ResetMocksTestExecutionListener@1e683a3e, org.springframework.boot.test.autoconfigure.restdocs.RestDocsTestExecutionListener@2053d869, org.springframework.boot.test.autoconfigure.web.client.MockRestServiceServerResetTestExecutionListener@7a419da4, org.springframework.boot.test.autoconfigure.web.servlet.MockMvcPrintOnlyOnFailureTestExecutionListener@14555e0a, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverTestExecutionListener@4bb33f74]
-21:01:10.533[INFO ][main]c.e.demo.MybatisTestApplicationTests - Starting MybatisTestApplicationTests on DESKTOP-Jungle with PID 4048 (started by wangjiang in E:\jungle\MyabtisTest)
-21:01:10.534[INFO ][main]c.e.demo.MybatisTestApplicationTests - No active profile set, falling back to default profiles: default
-21:01:12.434[INFO ][main]o.s.d.r.c.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode!
-21:01:12.435[INFO ][main]o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data repositories in DEFAULT mode.
-21:01:12.453[INFO ][main]o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 14ms. Found 0 repository interfaces.
-21:01:12.463[INFO ][main]o.s.d.r.c.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode!
-21:01:12.464[INFO ][main]o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data repositories in DEFAULT mode.
-21:01:12.471[INFO ][main]o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 1ms. Found 0 repository interfaces.
-21:01:12.562[WARN ][main]o.m.s.mapper.ClassPathMapperScanner - No MyBatis mapper was found in '[com.test.dao]' package. Please check your configuration.
-21:01:12.741[ERROR][main]o.s.boot.SpringApplication - Application run failed
-java.lang.IllegalStateException: Failed to introspect Class [com.test.service.serviceImpl.UserServiceImpl] from ClassLoader [sun.misc.Launcher$AppClassLoader@28d93b30]
-	at org.springframework.util.ReflectionUtils.getDeclaredFields(ReflectionUtils.java:760) ~[spring-core-5.1.9.RELEASE.jar:5.1.9.RELEASE]
-	at org.springframework.util.ReflectionUtils.doWithFields(ReflectionUtils.java:725) ~[spring-core-5.1.9.RELEASE.jar:5.1.9.RELEASE]
-	at org.springframework.util.ReflectionUtils.doWithFields(ReflectionUtils.java:710) ~[spring-core-5.1.9.RELEASE.jar:5.1.9.RELEASE]
-	at org.springframework.boot.test.mock.mockito.DefinitionsParser.parse(DefinitionsParser.java:62) ~[spring-boot-test-2.1.8.RELEASE.jar:2.1.8.RELEASE]
-	at org.springframework.boot.test.mock.mockito.MockitoPostProcessor.postProcessBeanFactory(MockitoPostProcessor.java:137) ~[spring-boot-test-2.1.8.RELEASE.jar:2.1.8.RELEASE]
-	at org.springframework.boot.test.mock.mockito.MockitoPostProcessor.postProcessBeanFactory(MockitoPostProcessor.java:130) ~[spring-boot-test-2.1.8.RELEASE.jar:2.1.8.RELEASE]
-	at org.springframework.context.support.PostProcessorRegistrationDelegate.invokeBeanFactoryPostProcessors(PostProcessorRegistrationDelegate.java:286) ~[spring-context-5.1.9.RELEASE.jar:5.1.9.RELEASE]
-	at org.springframework.context.support.PostProcessorRegistrationDelegate.invokeBeanFactoryPostProcessors(PostProcessorRegistrationDelegate.java:174) ~[spring-context-5.1.9.RELEASE.jar:5.1.9.RELEASE]
-	at org.springframework.context.support.AbstractApplicationContext.invokeBeanFactoryPostProcessors(AbstractApplicationContext.java:705) ~[spring-context-5.1.9.RELEASE.jar:5.1.9.RELEASE]
-	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:531) ~[spring-context-5.1.9.RELEASE.jar:5.1.9.RELEASE]
-	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:744) ~[spring-boot-2.1.8.RELEASE.jar:2.1.8.RELEASE]
-	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:391) ~[spring-boot-2.1.8.RELEASE.jar:2.1.8.RELEASE]
-	at org.springframework.boot.SpringApplication.run(SpringApplication.java:312) ~[spring-boot-2.1.8.RELEASE.jar:2.1.8.RELEASE]
-	at org.springframework.boot.test.context.SpringBootContextLoader.loadContext(SpringBootContextLoader.java:120) [spring-boot-test-2.1.8.RELEASE.jar:2.1.8.RELEASE]
-	at org.springframework.test.context.cache.DefaultCacheAwareContextLoaderDelegate.loadContextInternal(DefaultCacheAwareContextLoaderDelegate.java:99) [spring-test-5.1.9.RELEASE.jar:5.1.9.RELEASE]
-	at org.springframework.test.context.cache.DefaultCacheAwareContextLoaderDelegate.loadContext(DefaultCacheAwareContextLoaderDelegate.java:117) [spring-test-5.1.9.RELEASE.jar:5.1.9.RELEASE]
-	at org.springframework.test.context.support.DefaultTestContext.getApplicationContext(DefaultTestContext.java:108) [spring-test-5.1.9.RELEASE.jar:5.1.9.RELEASE]
-	at org.springframework.test.context.web.ServletTestExecutionListener.setUpRequestContextIfNecessary(ServletTestExecutionListener.java:190) [spring-test-5.1.9.RELEASE.jar:5.1.9.RELEASE]
-	at org.springframework.test.context.web.ServletTestExecutionListener.prepareTestInstance(ServletTestExecutionListener.java:132) [spring-test-5.1.9.RELEASE.jar:5.1.9.RELEASE]
-	at org.springframework.test.context.TestContextManager.prepareTestInstance(TestContextManager.java:246) [spring-test-5.1.9.RELEASE.jar:5.1.9.RELEASE]
-	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.createTest(SpringJUnit4ClassRunner.java:227) [spring-test-5.1.9.RELEASE.jar:5.1.9.RELEASE]
-	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner$1.runReflectiveCall(SpringJUnit4ClassRunner.java:289) [spring-test-5.1.9.RELEASE.jar:5.1.9.RELEASE]
-	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12) [junit-4.12.jar:4.12]
-	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.methodBlock(SpringJUnit4ClassRunner.java:291) [spring-test-5.1.9.RELEASE.jar:5.1.9.RELEASE]
-	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.runChild(SpringJUnit4ClassRunner.java:246) [spring-test-5.1.9.RELEASE.jar:5.1.9.RELEASE]
-	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.runChild(SpringJUnit4ClassRunner.java:97) [spring-test-5.1.9.RELEASE.jar:5.1.9.RELEASE]
-	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:290) [junit-4.12.jar:4.12]
-	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:71) [junit-4.12.jar:4.12]
-	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:288) [junit-4.12.jar:4.12]
-	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:58) [junit-4.12.jar:4.12]
-	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:268) [junit-4.12.jar:4.12]
-	at org.springframework.test.context.junit4.statements.RunBeforeTestClassCallbacks.evaluate(RunBeforeTestClassCallbacks.java:61) [spring-test-5.1.9.RELEASE.jar:5.1.9.RELEASE]
-	at org.springframework.test.context.junit4.statements.RunAfterTestClassCallbacks.evaluate(RunAfterTestClassCallbacks.java:70) [spring-test-5.1.9.RELEASE.jar:5.1.9.RELEASE]
-	at org.junit.runners.ParentRunner.run(ParentRunner.java:363) [junit-4.12.jar:4.12]
-	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.run(SpringJUnit4ClassRunner.java:190) [spring-test-5.1.9.RELEASE.jar:5.1.9.RELEASE]
-	at org.apache.maven.surefire.junit4.JUnit4Provider.execute(JUnit4Provider.java:365) [surefire-junit4-2.22.2.jar:2.22.2]
-	at org.apache.maven.surefire.junit4.JUnit4Provider.executeWithRerun(JUnit4Provider.java:273) [surefire-junit4-2.22.2.jar:2.22.2]
-	at org.apache.maven.surefire.junit4.JUnit4Provider.executeTestSet(JUnit4Provider.java:238) [surefire-junit4-2.22.2.jar:2.22.2]
-	at org.apache.maven.surefire.junit4.JUnit4Provider.invoke(JUnit4Provider.java:159) [surefire-junit4-2.22.2.jar:2.22.2]
-	at org.apache.maven.surefire.booter.ForkedBooter.invokeProviderInSameClassLoader(ForkedBooter.java:384) [surefire-booter-2.22.2.jar:2.22.2]
-	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:345) [surefire-booter-2.22.2.jar:2.22.2]
-	at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:126) [surefire-booter-2.22.2.jar:2.22.2]
-	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:418) [surefire-booter-2.22.2.jar:2.22.2]
-Caused by: java.lang.NoClassDefFoundError: Lcom/test/dao/UserMapper;
-	at java.lang.Class.getDeclaredFields0(Native Method) ~[na:1.8.0_131]
-	at java.lang.Class.privateGetDeclaredFields(Class.java:2583) ~[na:1.8.0_131]
-	at java.lang.Class.getDeclaredFields(Class.java:1916) ~[na:1.8.0_131]
-	at org.springframework.util.ReflectionUtils.getDeclaredFields(ReflectionUtils.java:755) ~[spring-core-5.1.9.RELEASE.jar:5.1.9.RELEASE]
-	... 42 common frames omitted
-Caused by: java.lang.ClassNotFoundException: com.test.dao.UserMapper
-	at java.net.URLClassLoader.findClass(URLClassLoader.java:381) ~[na:1.8.0_131]
-	at java.lang.ClassLoader.loadClass(ClassLoader.java:424) ~[na:1.8.0_131]
-	at sun.misc.Launcher$AppClassLoader.loadClass(Launcher.java:335) ~[na:1.8.0_131]
-	at java.lang.ClassLoader.loadClass(ClassLoader.java:357) ~[na:1.8.0_131]
-	... 46 common frames omitted
-21:01:12.746[ERROR][main]o.s.test.context.TestContextManager - Caught exception while allowing TestExecutionListener [org.springframework.test.context.web.ServletTestExecutionListener@7ea9e1e2] to prepare test instance [com.example.demo.MybatisTestApplicationTests@1fc3df43]
-java.lang.IllegalStateException: Failed to load ApplicationContext
-	at org.springframework.test.context.cache.DefaultCacheAwareContextLoaderDelegate.loadContext(DefaultCacheAwareContextLoaderDelegate.java:125) ~[spring-test-5.1.9.RELEASE.jar:5.1.9.RELEASE]
-	at org.springframework.test.context.support.DefaultTestContext.getApplicationContext(DefaultTestContext.java:108) ~[spring-test-5.1.9.RELEASE.jar:5.1.9.RELEASE]
-	at org.springframework.test.context.web.ServletTestExecutionListener.setUpRequestContextIfNecessary(ServletTestExecutionListener.java:190) ~[spring-test-5.1.9.RELEASE.jar:5.1.9.RELEASE]
-	at org.springframework.test.context.web.ServletTestExecutionListener.prepareTestInstance(ServletTestExecutionListener.java:132) ~[spring-test-5.1.9.RELEASE.jar:5.1.9.RELEASE]
+20:52:02.022[INFO ][main]c.e.demo.MybatisTestApplication - Starting MybatisTestApplication on DESKTOP-Jungle with PID 14204 (E:\jungle\MyabtisTest\target\classes started by wangjiang in E:\jungle\MyabtisTest)
+20:52:02.065[INFO ][main]c.e.demo.MybatisTestApplication - No active profile set, falling back to default profiles: default
+20:52:02.951[INFO ][main]o.s.d.r.c.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode!
+20:52:02.952[INFO ][main]o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data repositories in DEFAULT mode.
+20:52:02.967[INFO ][main]o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 5ms. Found 0 repository interfaces.
+20:52:02.977[INFO ][main]o.s.d.r.c.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode!
+20:52:02.978[INFO ][main]o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data repositories in DEFAULT mode.
+20:52:03.002[INFO ][main]o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 1ms. Found 0 repository interfaces.
+20:52:03.127[WARN ][main]o.m.s.mapper.ClassPathMapperScanner - No MyBatis mapper was found in '[com.example.demo]' package. Please check your configuration.
+20:52:03.341[INFO ][main]o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'org.springframework.ws.config.annotation.DelegatingWsConfiguration' of type [org.springframework.ws.config.annotation.DelegatingWsConfiguration$$EnhancerBySpringCGLIB$$536419af] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+20:52:03.421[INFO ][main]o.s.w.s.a.s.AnnotationActionEndpointMapping - Supporting [WS-Addressing August 2004, WS-Addressing 1.0]
+20:52:03.456[INFO ][main]o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$aecc54b0] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+20:52:04.160[INFO ][main]o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8080 (http)
+20:52:04.172[INFO ][main]o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+20:52:04.179[INFO ][main]o.a.catalina.core.StandardService - Starting service [Tomcat]
+20:52:04.179[INFO ][main]o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.24]
+20:52:04.293[INFO ][main]o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+20:52:04.293[INFO ][main]o.s.web.context.ContextLoader - Root WebApplicationContext: initialization completed in 2110 ms
+20:52:04.662[INFO ][main]o.s.s.c.ThreadPoolTaskExecutor - Initializing ExecutorService 'applicationTaskExecutor'
+20:52:04.736[INFO ][main]o.s.b.a.w.s.WelcomePageHandlerMapping - Adding welcome page: ServletContext resource [/index.html]
+20:52:05.768[INFO ][main]org.quartz.impl.StdSchedulerFactory - Using default implementation for ThreadExecutor
+20:52:05.792[INFO ][main]o.quartz.core.SchedulerSignalerImpl - Initialized Scheduler Signaller of type: class org.quartz.core.SchedulerSignalerImpl
+20:52:05.792[INFO ][main]org.quartz.core.QuartzScheduler - Quartz Scheduler v.2.3.0 created.
+20:52:05.793[INFO ][main]org.quartz.simpl.RAMJobStore - RAMJobStore initialized.
+20:52:05.793[INFO ][main]org.quartz.core.QuartzScheduler - Scheduler meta-data: Quartz Scheduler (v2.3.0) 'quartzScheduler' with instanceId 'NON_CLUSTERED'
+  Scheduler class: 'org.quartz.core.QuartzScheduler' - running locally.
+  NOT STARTED.
+  Currently in standby mode.
+  Number of jobs executed: 0
+  Using thread pool 'org.quartz.simpl.SimpleThreadPool' - with 10 threads.
+  Using job-store 'org.quartz.simpl.RAMJobStore' - which does not support persistence. and is not clustered.
+
+20:52:05.793[INFO ][main]org.quartz.impl.StdSchedulerFactory - Quartz scheduler 'quartzScheduler' initialized from an externally provided properties instance.
+20:52:05.793[INFO ][main]org.quartz.impl.StdSchedulerFactory - Quartz scheduler version: 2.3.0
+20:52:05.794[INFO ][main]org.quartz.core.QuartzScheduler - JobFactory set to: org.springframework.scheduling.quartz.SpringBeanJobFactory@73d91faf
+20:52:05.927[WARN ][main]o.s.b.s.r.RedisStarterDeprecationWarningAutoConfiguration - spring-boot-starter-redis is deprecated as of Spring Boot 1.4, please migrate to spring-boot-starter-data-redis
+20:52:06.031[INFO ][main]o.s.s.quartz.SchedulerFactoryBean - Starting Quartz Scheduler now
+20:52:06.031[INFO ][main]org.quartz.core.QuartzScheduler - Scheduler quartzScheduler_$_NON_CLUSTERED started.
+20:52:06.037[INFO ][main]o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8080"]
+20:52:06.058[INFO ][main]o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port(s): 8080 (http) with context path ''
+20:52:06.060[INFO ][main]c.e.demo.MybatisTestApplication - Started MybatisTestApplication in 4.381 seconds (JVM running for 5.563)
+21:04:21.733[INFO ][main]c.e.demo.MybatisTestApplication - Starting MybatisTestApplication on DESKTOP-Jungle with PID 20440 (E:\jungle\MyabtisTest\target\classes started by wangjiang in E:\jungle\MyabtisTest)
+21:04:21.735[INFO ][main]c.e.demo.MybatisTestApplication - No active profile set, falling back to default profiles: default
+21:04:22.389[INFO ][main]o.s.d.r.c.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode!
+21:04:22.390[INFO ][main]o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data repositories in DEFAULT mode.
+21:04:22.400[INFO ][main]o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 6ms. Found 0 repository interfaces.
+21:04:22.408[INFO ][main]o.s.d.r.c.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode!
+21:04:22.409[INFO ][main]o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data repositories in DEFAULT mode.
+21:04:22.415[INFO ][main]o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 0ms. Found 0 repository interfaces.
+21:04:22.515[WARN ][main]o.m.s.mapper.ClassPathMapperScanner - No MyBatis mapper was found in '[com.example.demo]' package. Please check your configuration.
+21:04:22.720[INFO ][main]o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'org.springframework.ws.config.annotation.DelegatingWsConfiguration' of type [org.springframework.ws.config.annotation.DelegatingWsConfiguration$$EnhancerBySpringCGLIB$$743503e9] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+21:04:22.749[INFO ][main]o.s.w.s.a.s.AnnotationActionEndpointMapping - Supporting [WS-Addressing August 2004, WS-Addressing 1.0]
+21:04:22.776[INFO ][main]o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$cf9d3eea] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+21:04:23.417[INFO ][main]o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8080 (http)
+21:04:23.429[INFO ][main]o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+21:04:23.438[INFO ][main]o.a.catalina.core.StandardService - Starting service [Tomcat]
+21:04:23.438[INFO ][main]o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.24]
+21:04:23.561[INFO ][main]o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+21:04:23.561[INFO ][main]o.s.web.context.ContextLoader - Root WebApplicationContext: initialization completed in 1784 ms
+21:04:23.870[INFO ][main]o.s.s.c.ThreadPoolTaskExecutor - Initializing ExecutorService 'applicationTaskExecutor'
+21:04:23.933[INFO ][main]o.s.b.a.w.s.WelcomePageHandlerMapping - Adding welcome page: ServletContext resource [/index.html]
+21:04:24.709[INFO ][main]org.quartz.impl.StdSchedulerFactory - Using default implementation for ThreadExecutor
+21:04:24.722[INFO ][main]o.quartz.core.SchedulerSignalerImpl - Initialized Scheduler Signaller of type: class org.quartz.core.SchedulerSignalerImpl
+21:04:24.722[INFO ][main]org.quartz.core.QuartzScheduler - Quartz Scheduler v.2.3.0 created.
+21:04:24.722[INFO ][main]org.quartz.simpl.RAMJobStore - RAMJobStore initialized.
+21:04:24.723[INFO ][main]org.quartz.core.QuartzScheduler - Scheduler meta-data: Quartz Scheduler (v2.3.0) 'quartzScheduler' with instanceId 'NON_CLUSTERED'
+  Scheduler class: 'org.quartz.core.QuartzScheduler' - running locally.
+  NOT STARTED.
+  Currently in standby mode.
+  Number of jobs executed: 0
+  Using thread pool 'org.quartz.simpl.SimpleThreadPool' - with 10 threads.
+  Using job-store 'org.quartz.simpl.RAMJobStore' - which does not support persistence. and is not clustered.
+
+21:04:24.723[INFO ][main]org.quartz.impl.StdSchedulerFactory - Quartz scheduler 'quartzScheduler' initialized from an externally provided properties instance.
+21:04:24.723[INFO ][main]org.quartz.impl.StdSchedulerFactory - Quartz scheduler version: 2.3.0
+21:04:24.723[INFO ][main]org.quartz.core.QuartzScheduler - JobFactory set to: org.springframework.scheduling.quartz.SpringBeanJobFactory@4ab455e2
+21:04:24.779[WARN ][main]o.s.b.s.r.RedisStarterDeprecationWarningAutoConfiguration - spring-boot-starter-redis is deprecated as of Spring Boot 1.4, please migrate to spring-boot-starter-data-redis
+21:04:24.835[INFO ][main]o.s.s.quartz.SchedulerFactoryBean - Starting Quartz Scheduler now
+21:04:24.835[INFO ][main]org.quartz.core.QuartzScheduler - Scheduler quartzScheduler_$_NON_CLUSTERED started.
+21:04:24.840[INFO ][main]o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8080"]
+21:04:24.864[INFO ][main]o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port(s): 8080 (http) with context path ''
+21:04:24.866[INFO ][main]c.e.demo.MybatisTestApplication - Started MybatisTestApplication in 3.452 seconds (JVM running for 3.989)
+21:05:41.244[INFO ][main]o.s.b.t.c.SpringBootTestContextBootstrapper - Neither @ContextConfiguration nor @ContextHierarchy found for test class [com.test.mail.SendemailApplicationTestsTest], using SpringBootContextLoader
+21:05:41.249[INFO ][main]o.s.t.c.s.AbstractContextLoader - Could not detect default resource locations for test class [com.test.mail.SendemailApplicationTestsTest]: no resource found for suffixes {-context.xml, Context.groovy}.
+21:05:41.250[INFO ][main]o.s.t.c.s.AnnotationConfigContextLoaderUtils - Could not detect default configuration classes for test class [com.test.mail.SendemailApplicationTestsTest]: SendemailApplicationTestsTest does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+21:07:50.685[INFO ][main]o.s.b.t.c.SpringBootTestContextBootstrapper - Neither @ContextConfiguration nor @ContextHierarchy found for test class [com.test.mail.SendemailApplicationTestsTest], using SpringBootContextLoader
+21:07:50.689[INFO ][main]o.s.t.c.s.AbstractContextLoader - Could not detect default resource locations for test class [com.test.mail.SendemailApplicationTestsTest]: no resource found for suffixes {-context.xml, Context.groovy}.
+21:07:50.690[INFO ][main]o.s.t.c.s.AnnotationConfigContextLoaderUtils - Could not detect default configuration classes for test class [com.test.mail.SendemailApplicationTestsTest]: SendemailApplicationTestsTest does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+21:09:38.381[INFO ][main]o.s.b.t.c.SpringBootTestContextBootstrapper - Neither @ContextConfiguration nor @ContextHierarchy found for test class [com.test.mail.SendemailApplicationTestsTest], using SpringBootContextLoader
+21:09:38.385[INFO ][main]o.s.t.c.s.AbstractContextLoader - Could not detect default resource locations for test class [com.test.mail.SendemailApplicationTestsTest]: no resource found for suffixes {-context.xml, Context.groovy}.
+21:09:38.386[INFO ][main]o.s.t.c.s.AnnotationConfigContextLoaderUtils - Could not detect default configuration classes for test class [com.test.mail.SendemailApplicationTestsTest]: SendemailApplicationTestsTest does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+21:11:26.463[INFO ][main]o.s.b.t.c.SpringBootTestContextBootstrapper - Neither @ContextConfiguration nor @ContextHierarchy found for test class [com.example.demo.MybatisTestApplicationTests], using SpringBootContextLoader
+21:11:26.468[INFO ][main]o.s.t.c.s.AbstractContextLoader - Could not detect default resource locations for test class [com.example.demo.MybatisTestApplicationTests]: no resource found for suffixes {-context.xml, Context.groovy}.
+21:11:26.469[INFO ][main]o.s.t.c.s.AnnotationConfigContextLoaderUtils - Could not detect default configuration classes for test class [com.example.demo.MybatisTestApplicationTests]: MybatisTestApplicationTests does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+21:11:26.565[INFO ][main]o.s.b.t.c.SpringBootTestContextBootstrapper - Found @SpringBootConfiguration com.example.demo.MybatisTestApplication for test class com.example.demo.MybatisTestApplicationTests
+21:11:26.661[INFO ][main]o.s.b.t.c.SpringBootTestContextBootstrapper - Loaded default TestExecutionListener class names from location [META-INF/spring.factories]: [org.springframework.boot.test.autoconfigure.restdocs.RestDocsTestExecutionListener, org.springframework.boot.test.autoconfigure.web.client.MockRestServiceServerResetTestExecutionListener, org.springframework.boot.test.autoconfigure.web.servlet.MockMvcPrintOnlyOnFailureTestExecutionListener, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverTestExecutionListener, org.springframework.boot.test.mock.mockito.MockitoTestExecutionListener, org.springframework.boot.test.mock.mockito.ResetMocksTestExecutionListener, org.springframework.test.context.web.ServletTestExecutionListener, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener, org.springframework.test.context.support.DependencyInjectionTestExecutionListener, org.springframework.test.context.support.DirtiesContextTestExecutionListener, org.springframework.test.context.transaction.TransactionalTestExecutionListener, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener]
+21:11:26.679[INFO ][main]o.s.b.t.c.SpringBootTestContextBootstrapper - Using TestExecutionListeners: [org.springframework.test.context.web.ServletTestExecutionListener@4f0100a7, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener@3cdf2c61, org.springframework.boot.test.mock.mockito.MockitoTestExecutionListener@13ad5cd3, org.springframework.boot.test.autoconfigure.SpringBootDependencyInjectionTestExecutionListener@1c33c17b, org.springframework.test.context.support.DirtiesContextTestExecutionListener@5bf0fe62, org.springframework.test.context.transaction.TransactionalTestExecutionListener@1e097d59, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener@673be18f, org.springframework.boot.test.autoconfigure.restdocs.RestDocsTestExecutionListener@6581dc0a, org.springframework.boot.test.autoconfigure.web.client.MockRestServiceServerResetTestExecutionListener@39de3d36, org.springframework.boot.test.autoconfigure.web.servlet.MockMvcPrintOnlyOnFailureTestExecutionListener@6ce86ce1, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverTestExecutionListener@54e7df6a, org.springframework.boot.test.mock.mockito.ResetMocksTestExecutionListener@3fed2870]
+21:11:27.046[INFO ][main]c.e.demo.MybatisTestApplicationTests - Starting MybatisTestApplicationTests on DESKTOP-Jungle with PID 16168 (started by wangjiang in E:\jungle\MyabtisTest)
+21:11:27.047[INFO ][main]c.e.demo.MybatisTestApplicationTests - No active profile set, falling back to default profiles: default
+21:11:27.627[INFO ][main]o.s.d.r.c.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode!
+21:11:27.628[INFO ][main]o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data repositories in DEFAULT mode.
+21:11:27.640[INFO ][main]o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 6ms. Found 0 repository interfaces.
+21:11:27.650[INFO ][main]o.s.d.r.c.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode!
+21:11:27.650[INFO ][main]o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data repositories in DEFAULT mode.
+21:11:27.656[INFO ][main]o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 1ms. Found 0 repository interfaces.
+21:11:27.756[WARN ][main]o.m.s.mapper.ClassPathMapperScanner - No MyBatis mapper was found in '[com.example.demo]' package. Please check your configuration.
+21:11:27.997[INFO ][main]o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'org.springframework.ws.config.annotation.DelegatingWsConfiguration' of type [org.springframework.ws.config.annotation.DelegatingWsConfiguration$$EnhancerBySpringCGLIB$$ef63ea7c] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+21:11:28.032[INFO ][main]o.s.w.s.a.s.AnnotationActionEndpointMapping - Supporting [WS-Addressing August 2004, WS-Addressing 1.0]
+21:11:28.051[INFO ][main]o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$4acc257d] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+21:11:28.706[INFO ][main]o.s.s.c.ThreadPoolTaskExecutor - Initializing ExecutorService 'applicationTaskExecutor'
+21:11:28.775[INFO ][main]o.s.b.a.w.s.WelcomePageHandlerMapping - Adding welcome page: ServletContext resource [/index.html]
+21:11:30.077[INFO ][main]org.quartz.impl.StdSchedulerFactory - Using default implementation for ThreadExecutor
+21:11:30.091[INFO ][main]o.quartz.core.SchedulerSignalerImpl - Initialized Scheduler Signaller of type: class org.quartz.core.SchedulerSignalerImpl
+21:11:30.091[INFO ][main]org.quartz.core.QuartzScheduler - Quartz Scheduler v.2.3.0 created.
+21:11:30.092[INFO ][main]org.quartz.simpl.RAMJobStore - RAMJobStore initialized.
+21:11:30.093[INFO ][main]org.quartz.core.QuartzScheduler - Scheduler meta-data: Quartz Scheduler (v2.3.0) 'quartzScheduler' with instanceId 'NON_CLUSTERED'
+  Scheduler class: 'org.quartz.core.QuartzScheduler' - running locally.
+  NOT STARTED.
+  Currently in standby mode.
+  Number of jobs executed: 0
+  Using thread pool 'org.quartz.simpl.SimpleThreadPool' - with 10 threads.
+  Using job-store 'org.quartz.simpl.RAMJobStore' - which does not support persistence. and is not clustered.
+
+21:11:30.093[INFO ][main]org.quartz.impl.StdSchedulerFactory - Quartz scheduler 'quartzScheduler' initialized from an externally provided properties instance.
+21:11:30.093[INFO ][main]org.quartz.impl.StdSchedulerFactory - Quartz scheduler version: 2.3.0
+21:11:30.093[INFO ][main]org.quartz.core.QuartzScheduler - JobFactory set to: org.springframework.scheduling.quartz.SpringBeanJobFactory@534d0e20
+21:11:30.227[WARN ][main]o.s.b.s.r.RedisStarterDeprecationWarningAutoConfiguration - spring-boot-starter-redis is deprecated as of Spring Boot 1.4, please migrate to spring-boot-starter-data-redis
+21:11:30.236[INFO ][main]o.s.s.quartz.SchedulerFactoryBean - Starting Quartz Scheduler now
+21:11:30.236[INFO ][main]org.quartz.core.QuartzScheduler - Scheduler quartzScheduler_$_NON_CLUSTERED started.
+21:11:30.243[INFO ][main]c.e.demo.MybatisTestApplicationTests - Started MybatisTestApplicationTests in 3.523 seconds (JVM running for 4.365)
+21:11:30.294[ERROR][main]o.s.test.context.TestContextManager - Caught exception while allowing TestExecutionListener [org.springframework.boot.test.autoconfigure.SpringBootDependencyInjectionTestExecutionListener@1c33c17b] to prepare test instance [com.example.demo.MybatisTestApplicationTests@25e6c22a]
+org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'com.example.demo.MybatisTestApplicationTests': Unsatisfied dependency expressed through field 'sendMailService'; nested exception is org.springframework.beans.factory.NoSuchBeanDefinitionException: No qualifying bean of type 'com.test.mail.service.SendMailService' available: expected at least 1 bean which qualifies as autowire candidate. Dependency annotations: {@org.springframework.beans.factory.annotation.Autowired(required=true)}
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor$AutowiredFieldElement.inject(AutowiredAnnotationBeanPostProcessor.java:596) ~[spring-beans-5.1.9.RELEASE.jar:5.1.9.RELEASE]
+	at org.springframework.beans.factory.annotation.InjectionMetadata.inject(InjectionMetadata.java:90) ~[spring-beans-5.1.9.RELEASE.jar:5.1.9.RELEASE]
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor.postProcessProperties(AutowiredAnnotationBeanPostProcessor.java:374) ~[spring-beans-5.1.9.RELEASE.jar:5.1.9.RELEASE]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.populateBean(AbstractAutowireCapableBeanFactory.java:1411) ~[spring-beans-5.1.9.RELEASE.jar:5.1.9.RELEASE]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.autowireBeanProperties(AbstractAutowireCapableBeanFactory.java:391) ~[spring-beans-5.1.9.RELEASE.jar:5.1.9.RELEASE]
+	at org.springframework.test.context.support.DependencyInjectionTestExecutionListener.injectDependencies(DependencyInjectionTestExecutionListener.java:119) ~[spring-test-5.1.9.RELEASE.jar:5.1.9.RELEASE]
+	at org.springframework.test.context.support.DependencyInjectionTestExecutionListener.prepareTestInstance(DependencyInjectionTestExecutionListener.java:83) ~[spring-test-5.1.9.RELEASE.jar:5.1.9.RELEASE]
+	at org.springframework.boot.test.autoconfigure.SpringBootDependencyInjectionTestExecutionListener.prepareTestInstance(SpringBootDependencyInjectionTestExecutionListener.java:43) ~[spring-boot-test-autoconfigure-2.1.8.RELEASE.jar:2.1.8.RELEASE]
 	at org.springframework.test.context.TestContextManager.prepareTestInstance(TestContextManager.java:246) ~[spring-test-5.1.9.RELEASE.jar:5.1.9.RELEASE]
 	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.createTest(SpringJUnit4ClassRunner.java:227) [spring-test-5.1.9.RELEASE.jar:5.1.9.RELEASE]
 	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner$1.runReflectiveCall(SpringJUnit4ClassRunner.java:289) [spring-test-5.1.9.RELEASE.jar:5.1.9.RELEASE]
@@ -92,68 +154,47 @@ java.lang.IllegalStateException: Failed to load ApplicationContext
 	at org.springframework.test.context.junit4.statements.RunAfterTestClassCallbacks.evaluate(RunAfterTestClassCallbacks.java:70) [spring-test-5.1.9.RELEASE.jar:5.1.9.RELEASE]
 	at org.junit.runners.ParentRunner.run(ParentRunner.java:363) [junit-4.12.jar:4.12]
 	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.run(SpringJUnit4ClassRunner.java:190) [spring-test-5.1.9.RELEASE.jar:5.1.9.RELEASE]
-	at org.apache.maven.surefire.junit4.JUnit4Provider.execute(JUnit4Provider.java:365) [surefire-junit4-2.22.2.jar:2.22.2]
-	at org.apache.maven.surefire.junit4.JUnit4Provider.executeWithRerun(JUnit4Provider.java:273) [surefire-junit4-2.22.2.jar:2.22.2]
-	at org.apache.maven.surefire.junit4.JUnit4Provider.executeTestSet(JUnit4Provider.java:238) [surefire-junit4-2.22.2.jar:2.22.2]
-	at org.apache.maven.surefire.junit4.JUnit4Provider.invoke(JUnit4Provider.java:159) [surefire-junit4-2.22.2.jar:2.22.2]
-	at org.apache.maven.surefire.booter.ForkedBooter.invokeProviderInSameClassLoader(ForkedBooter.java:384) [surefire-booter-2.22.2.jar:2.22.2]
-	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:345) [surefire-booter-2.22.2.jar:2.22.2]
-	at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:126) [surefire-booter-2.22.2.jar:2.22.2]
-	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:418) [surefire-booter-2.22.2.jar:2.22.2]
-Caused by: java.lang.IllegalStateException: Failed to introspect Class [com.test.service.serviceImpl.UserServiceImpl] from ClassLoader [sun.misc.Launcher$AppClassLoader@28d93b30]
-	at org.springframework.util.ReflectionUtils.getDeclaredFields(ReflectionUtils.java:760) ~[spring-core-5.1.9.RELEASE.jar:5.1.9.RELEASE]
-	at org.springframework.util.ReflectionUtils.doWithFields(ReflectionUtils.java:725) ~[spring-core-5.1.9.RELEASE.jar:5.1.9.RELEASE]
-	at org.springframework.util.ReflectionUtils.doWithFields(ReflectionUtils.java:710) ~[spring-core-5.1.9.RELEASE.jar:5.1.9.RELEASE]
-	at org.springframework.boot.test.mock.mockito.DefinitionsParser.parse(DefinitionsParser.java:62) ~[spring-boot-test-2.1.8.RELEASE.jar:2.1.8.RELEASE]
-	at org.springframework.boot.test.mock.mockito.MockitoPostProcessor.postProcessBeanFactory(MockitoPostProcessor.java:137) ~[spring-boot-test-2.1.8.RELEASE.jar:2.1.8.RELEASE]
-	at org.springframework.boot.test.mock.mockito.MockitoPostProcessor.postProcessBeanFactory(MockitoPostProcessor.java:130) ~[spring-boot-test-2.1.8.RELEASE.jar:2.1.8.RELEASE]
-	at org.springframework.context.support.PostProcessorRegistrationDelegate.invokeBeanFactoryPostProcessors(PostProcessorRegistrationDelegate.java:286) ~[spring-context-5.1.9.RELEASE.jar:5.1.9.RELEASE]
-	at org.springframework.context.support.PostProcessorRegistrationDelegate.invokeBeanFactoryPostProcessors(PostProcessorRegistrationDelegate.java:174) ~[spring-context-5.1.9.RELEASE.jar:5.1.9.RELEASE]
-	at org.springframework.context.support.AbstractApplicationContext.invokeBeanFactoryPostProcessors(AbstractApplicationContext.java:705) ~[spring-context-5.1.9.RELEASE.jar:5.1.9.RELEASE]
-	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:531) ~[spring-context-5.1.9.RELEASE.jar:5.1.9.RELEASE]
-	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:744) ~[spring-boot-2.1.8.RELEASE.jar:2.1.8.RELEASE]
-	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:391) ~[spring-boot-2.1.8.RELEASE.jar:2.1.8.RELEASE]
-	at org.springframework.boot.SpringApplication.run(SpringApplication.java:312) ~[spring-boot-2.1.8.RELEASE.jar:2.1.8.RELEASE]
-	at org.springframework.boot.test.context.SpringBootContextLoader.loadContext(SpringBootContextLoader.java:120) ~[spring-boot-test-2.1.8.RELEASE.jar:2.1.8.RELEASE]
-	at org.springframework.test.context.cache.DefaultCacheAwareContextLoaderDelegate.loadContextInternal(DefaultCacheAwareContextLoaderDelegate.java:99) ~[spring-test-5.1.9.RELEASE.jar:5.1.9.RELEASE]
-	at org.springframework.test.context.cache.DefaultCacheAwareContextLoaderDelegate.loadContext(DefaultCacheAwareContextLoaderDelegate.java:117) ~[spring-test-5.1.9.RELEASE.jar:5.1.9.RELEASE]
+	at org.junit.runner.JUnitCore.run(JUnitCore.java:137) [junit-4.12.jar:4.12]
+	at com.intellij.junit4.JUnit4IdeaTestRunner.startRunnerWithArgs(JUnit4IdeaTestRunner.java:69) [junit-rt.jar:na]
+	at com.intellij.rt.execution.junit.JUnitStarter.prepareStreamsAndStart(JUnitStarter.java:234) [junit-rt.jar:na]
+	at com.intellij.rt.execution.junit.JUnitStarter.main(JUnitStarter.java:74) [junit-rt.jar:na]
+Caused by: org.springframework.beans.factory.NoSuchBeanDefinitionException: No qualifying bean of type 'com.test.mail.service.SendMailService' available: expected at least 1 bean which qualifies as autowire candidate. Dependency annotations: {@org.springframework.beans.factory.annotation.Autowired(required=true)}
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.raiseNoMatchingBeanFound(DefaultListableBeanFactory.java:1658) ~[spring-beans-5.1.9.RELEASE.jar:5.1.9.RELEASE]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.doResolveDependency(DefaultListableBeanFactory.java:1217) ~[spring-beans-5.1.9.RELEASE.jar:5.1.9.RELEASE]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.resolveDependency(DefaultListableBeanFactory.java:1171) ~[spring-beans-5.1.9.RELEASE.jar:5.1.9.RELEASE]
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor$AutowiredFieldElement.inject(AutowiredAnnotationBeanPostProcessor.java:593) ~[spring-beans-5.1.9.RELEASE.jar:5.1.9.RELEASE]
 	... 27 common frames omitted
-Caused by: java.lang.NoClassDefFoundError: Lcom/test/dao/UserMapper;
-	at java.lang.Class.getDeclaredFields0(Native Method) ~[na:1.8.0_131]
-	at java.lang.Class.privateGetDeclaredFields(Class.java:2583) ~[na:1.8.0_131]
-	at java.lang.Class.getDeclaredFields(Class.java:1916) ~[na:1.8.0_131]
-	at org.springframework.util.ReflectionUtils.getDeclaredFields(ReflectionUtils.java:755) ~[spring-core-5.1.9.RELEASE.jar:5.1.9.RELEASE]
-	... 42 common frames omitted
-Caused by: java.lang.ClassNotFoundException: com.test.dao.UserMapper
-	at java.net.URLClassLoader.findClass(URLClassLoader.java:381) ~[na:1.8.0_131]
-	at java.lang.ClassLoader.loadClass(ClassLoader.java:424) ~[na:1.8.0_131]
-	at sun.misc.Launcher$AppClassLoader.loadClass(Launcher.java:335) ~[na:1.8.0_131]
-	at java.lang.ClassLoader.loadClass(ClassLoader.java:357) ~[na:1.8.0_131]
-	... 46 common frames omitted
-21:02:30.404[INFO ][main]c.e.demo.MybatisTestApplication - Starting MybatisTestApplication on DESKTOP-Jungle with PID 17544 (E:\jungle\MyabtisTest\target\classes started by wangjiang in E:\jungle\MyabtisTest)
-21:02:30.406[INFO ][main]c.e.demo.MybatisTestApplication - No active profile set, falling back to default profiles: default
-21:02:32.367[INFO ][main]o.s.d.r.c.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode!
-21:02:32.368[INFO ][main]o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data repositories in DEFAULT mode.
-21:02:32.382[INFO ][main]o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 10ms. Found 0 repository interfaces.
-21:02:32.391[INFO ][main]o.s.d.r.c.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode!
-21:02:32.392[INFO ][main]o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data repositories in DEFAULT mode.
-21:02:32.399[INFO ][main]o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 1ms. Found 0 repository interfaces.
-21:02:32.689[INFO ][main]o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'org.springframework.ws.config.annotation.DelegatingWsConfiguration' of type [org.springframework.ws.config.annotation.DelegatingWsConfiguration$$EnhancerBySpringCGLIB$$9ef1f18f] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
-21:02:32.737[INFO ][main]o.s.w.s.a.s.AnnotationActionEndpointMapping - Supporting [WS-Addressing August 2004, WS-Addressing 1.0]
-21:02:32.763[INFO ][main]o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$fa5a2c90] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
-21:02:33.391[INFO ][main]o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8080 (http)
-21:02:33.412[INFO ][main]o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
-21:02:33.428[INFO ][main]o.a.catalina.core.StandardService - Starting service [Tomcat]
-21:02:33.429[INFO ][main]o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.24]
-21:02:33.540[INFO ][main]o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
-21:02:33.540[INFO ][main]o.s.web.context.ContextLoader - Root WebApplicationContext: initialization completed in 3095 ms
-21:02:34.186[INFO ][main]o.s.s.c.ThreadPoolTaskExecutor - Initializing ExecutorService 'applicationTaskExecutor'
-21:02:34.239[INFO ][main]o.s.b.a.w.s.WelcomePageHandlerMapping - Adding welcome page: ServletContext resource [/index.html]
-21:02:34.576[INFO ][main]org.quartz.impl.StdSchedulerFactory - Using default implementation for ThreadExecutor
-21:02:34.587[INFO ][main]o.quartz.core.SchedulerSignalerImpl - Initialized Scheduler Signaller of type: class org.quartz.core.SchedulerSignalerImpl
-21:02:34.587[INFO ][main]org.quartz.core.QuartzScheduler - Quartz Scheduler v.2.3.1 created.
-21:02:34.588[INFO ][main]org.quartz.simpl.RAMJobStore - RAMJobStore initialized.
-21:02:34.588[INFO ][main]org.quartz.core.QuartzScheduler - Scheduler meta-data: Quartz Scheduler (v2.3.1) 'quartzScheduler' with instanceId 'NON_CLUSTERED'
+21:11:30.336[INFO ][Thread-2]org.quartz.core.QuartzScheduler - Scheduler quartzScheduler_$_NON_CLUSTERED paused.
+21:11:30.360[INFO ][Thread-2]o.s.s.quartz.SchedulerFactoryBean - Shutting down Quartz Scheduler
+21:11:30.360[INFO ][Thread-2]org.quartz.core.QuartzScheduler - Scheduler quartzScheduler_$_NON_CLUSTERED shutting down.
+21:11:30.360[INFO ][Thread-2]org.quartz.core.QuartzScheduler - Scheduler quartzScheduler_$_NON_CLUSTERED paused.
+21:11:30.360[INFO ][Thread-2]org.quartz.core.QuartzScheduler - Scheduler quartzScheduler_$_NON_CLUSTERED shutdown complete.
+21:11:30.422[INFO ][Thread-2]o.s.s.c.ThreadPoolTaskExecutor - Shutting down ExecutorService 'applicationTaskExecutor'
+21:12:08.761[INFO ][main]c.e.demo.MybatisTestApplication - Starting MybatisTestApplication on DESKTOP-Jungle with PID 15768 (E:\jungle\MyabtisTest\target\classes started by wangjiang in E:\jungle\MyabtisTest)
+21:12:08.763[INFO ][main]c.e.demo.MybatisTestApplication - No active profile set, falling back to default profiles: default
+21:12:09.453[INFO ][main]o.s.d.r.c.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode!
+21:12:09.453[INFO ][main]o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data repositories in DEFAULT mode.
+21:12:09.463[INFO ][main]o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 6ms. Found 0 repository interfaces.
+21:12:09.471[INFO ][main]o.s.d.r.c.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode!
+21:12:09.472[INFO ][main]o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data repositories in DEFAULT mode.
+21:12:09.478[INFO ][main]o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 1ms. Found 0 repository interfaces.
+21:12:09.581[WARN ][main]o.m.s.mapper.ClassPathMapperScanner - No MyBatis mapper was found in '[com.example.demo]' package. Please check your configuration.
+21:12:09.805[INFO ][main]o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'org.springframework.ws.config.annotation.DelegatingWsConfiguration' of type [org.springframework.ws.config.annotation.DelegatingWsConfiguration$$EnhancerBySpringCGLIB$$8cdd7963] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+21:12:09.835[INFO ][main]o.s.w.s.a.s.AnnotationActionEndpointMapping - Supporting [WS-Addressing August 2004, WS-Addressing 1.0]
+21:12:09.861[INFO ][main]o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$e845b464] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+21:12:10.476[INFO ][main]o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8080 (http)
+21:12:10.487[INFO ][main]o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+21:12:10.495[INFO ][main]o.a.catalina.core.StandardService - Starting service [Tomcat]
+21:12:10.496[INFO ][main]o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.24]
+21:12:10.606[INFO ][main]o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+21:12:10.607[INFO ][main]o.s.web.context.ContextLoader - Root WebApplicationContext: initialization completed in 1808 ms
+21:12:10.869[INFO ][main]o.s.s.c.ThreadPoolTaskExecutor - Initializing ExecutorService 'applicationTaskExecutor'
+21:12:10.922[INFO ][main]o.s.b.a.w.s.WelcomePageHandlerMapping - Adding welcome page: ServletContext resource [/index.html]
+21:12:11.600[INFO ][main]org.quartz.impl.StdSchedulerFactory - Using default implementation for ThreadExecutor
+21:12:11.610[INFO ][main]o.quartz.core.SchedulerSignalerImpl - Initialized Scheduler Signaller of type: class org.quartz.core.SchedulerSignalerImpl
+21:12:11.610[INFO ][main]org.quartz.core.QuartzScheduler - Quartz Scheduler v.2.3.0 created.
+21:12:11.611[INFO ][main]org.quartz.simpl.RAMJobStore - RAMJobStore initialized.
+21:12:11.612[INFO ][main]org.quartz.core.QuartzScheduler - Scheduler meta-data: Quartz Scheduler (v2.3.0) 'quartzScheduler' with instanceId 'NON_CLUSTERED'
   Scheduler class: 'org.quartz.core.QuartzScheduler' - running locally.
   NOT STARTED.
   Currently in standby mode.
@@ -161,40 +202,40 @@ Caused by: java.lang.ClassNotFoundException: com.test.dao.UserMapper
   Using thread pool 'org.quartz.simpl.SimpleThreadPool' - with 10 threads.
   Using job-store 'org.quartz.simpl.RAMJobStore' - which does not support persistence. and is not clustered.
 
-21:02:34.588[INFO ][main]org.quartz.impl.StdSchedulerFactory - Quartz scheduler 'quartzScheduler' initialized from an externally provided properties instance.
-21:02:34.588[INFO ][main]org.quartz.impl.StdSchedulerFactory - Quartz scheduler version: 2.3.1
-21:02:34.589[INFO ][main]org.quartz.core.QuartzScheduler - JobFactory set to: org.springframework.scheduling.quartz.SpringBeanJobFactory@39acf187
-21:02:34.734[WARN ][main]o.s.b.s.r.RedisStarterDeprecationWarningAutoConfiguration - spring-boot-starter-redis is deprecated as of Spring Boot 1.4, please migrate to spring-boot-starter-data-redis
-21:02:34.786[INFO ][main]o.s.s.quartz.SchedulerFactoryBean - Starting Quartz Scheduler now
-21:02:34.786[INFO ][main]org.quartz.core.QuartzScheduler - Scheduler quartzScheduler_$_NON_CLUSTERED started.
-21:02:34.792[INFO ][main]o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8080"]
-21:02:34.814[INFO ][main]o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port(s): 8080 (http) with context path ''
-21:02:34.816[INFO ][main]c.e.demo.MybatisTestApplication - Started MybatisTestApplication in 4.672 seconds (JVM running for 5.103)
-21:04:08.589[INFO ][main]c.e.demo.MybatisTestApplication - Starting MybatisTestApplication on DESKTOP-Jungle with PID 12872 (E:\jungle\MyabtisTest\target\classes started by wangjiang in E:\jungle\MyabtisTest)
-21:04:08.591[INFO ][main]c.e.demo.MybatisTestApplication - No active profile set, falling back to default profiles: default
-21:04:09.161[INFO ][main]o.s.d.r.c.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode!
-21:04:09.162[INFO ][main]o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data repositories in DEFAULT mode.
-21:04:09.172[INFO ][main]o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 7ms. Found 0 repository interfaces.
-21:04:09.180[INFO ][main]o.s.d.r.c.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode!
-21:04:09.181[INFO ][main]o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data repositories in DEFAULT mode.
-21:04:09.188[INFO ][main]o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 1ms. Found 0 repository interfaces.
-21:04:09.274[WARN ][main]o.m.s.mapper.ClassPathMapperScanner - No MyBatis mapper was found in '[com.example.demo]' package. Please check your configuration.
-21:04:09.453[INFO ][main]o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'org.springframework.ws.config.annotation.DelegatingWsConfiguration' of type [org.springframework.ws.config.annotation.DelegatingWsConfiguration$$EnhancerBySpringCGLIB$$3dd8ee3] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
-21:04:09.477[INFO ][main]o.s.w.s.a.s.AnnotationActionEndpointMapping - Supporting [WS-Addressing August 2004, WS-Addressing 1.0]
-21:04:09.498[INFO ][main]o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$5f45c9e4] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
-21:04:10.063[INFO ][main]o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8080 (http)
-21:04:10.073[INFO ][main]o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
-21:04:10.080[INFO ][main]o.a.catalina.core.StandardService - Starting service [Tomcat]
-21:04:10.081[INFO ][main]o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.24]
-21:04:10.184[INFO ][main]o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
-21:04:10.184[INFO ][main]o.s.web.context.ContextLoader - Root WebApplicationContext: initialization completed in 1564 ms
-21:04:10.423[INFO ][main]o.s.s.c.ThreadPoolTaskExecutor - Initializing ExecutorService 'applicationTaskExecutor'
-21:04:10.472[INFO ][main]o.s.b.a.w.s.WelcomePageHandlerMapping - Adding welcome page: ServletContext resource [/index.html]
-21:04:11.084[INFO ][main]org.quartz.impl.StdSchedulerFactory - Using default implementation for ThreadExecutor
-21:04:11.093[INFO ][main]o.quartz.core.SchedulerSignalerImpl - Initialized Scheduler Signaller of type: class org.quartz.core.SchedulerSignalerImpl
-21:04:11.093[INFO ][main]org.quartz.core.QuartzScheduler - Quartz Scheduler v.2.3.1 created.
-21:04:11.094[INFO ][main]org.quartz.simpl.RAMJobStore - RAMJobStore initialized.
-21:04:11.094[INFO ][main]org.quartz.core.QuartzScheduler - Scheduler meta-data: Quartz Scheduler (v2.3.1) 'quartzScheduler' with instanceId 'NON_CLUSTERED'
+21:12:11.612[INFO ][main]org.quartz.impl.StdSchedulerFactory - Quartz scheduler 'quartzScheduler' initialized from an externally provided properties instance.
+21:12:11.612[INFO ][main]org.quartz.impl.StdSchedulerFactory - Quartz scheduler version: 2.3.0
+21:12:11.612[INFO ][main]org.quartz.core.QuartzScheduler - JobFactory set to: org.springframework.scheduling.quartz.SpringBeanJobFactory@14dbfdb1
+21:12:11.668[WARN ][main]o.s.b.s.r.RedisStarterDeprecationWarningAutoConfiguration - spring-boot-starter-redis is deprecated as of Spring Boot 1.4, please migrate to spring-boot-starter-data-redis
+21:12:11.720[INFO ][main]o.s.s.quartz.SchedulerFactoryBean - Starting Quartz Scheduler now
+21:12:11.720[INFO ][main]org.quartz.core.QuartzScheduler - Scheduler quartzScheduler_$_NON_CLUSTERED started.
+21:12:11.726[INFO ][main]o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8080"]
+21:12:11.747[INFO ][main]o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port(s): 8080 (http) with context path ''
+21:12:11.749[INFO ][main]c.e.demo.MybatisTestApplication - Started MybatisTestApplication in 3.293 seconds (JVM running for 3.808)
+21:12:17.287[INFO ][main]o.s.b.t.c.SpringBootTestContextBootstrapper - Neither @ContextConfiguration nor @ContextHierarchy found for test class [com.example.demo.MybatisTestApplicationTests], using SpringBootContextLoader
+21:12:17.291[INFO ][main]o.s.t.c.s.AbstractContextLoader - Could not detect default resource locations for test class [com.example.demo.MybatisTestApplicationTests]: no resource found for suffixes {-context.xml, Context.groovy}.
+21:12:17.292[INFO ][main]o.s.t.c.s.AnnotationConfigContextLoaderUtils - Could not detect default configuration classes for test class [com.example.demo.MybatisTestApplicationTests]: MybatisTestApplicationTests does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+21:12:17.389[INFO ][main]o.s.b.t.c.SpringBootTestContextBootstrapper - Found @SpringBootConfiguration com.example.demo.MybatisTestApplication for test class com.example.demo.MybatisTestApplicationTests
+21:12:17.479[INFO ][main]o.s.b.t.c.SpringBootTestContextBootstrapper - Loaded default TestExecutionListener class names from location [META-INF/spring.factories]: [org.springframework.boot.test.autoconfigure.restdocs.RestDocsTestExecutionListener, org.springframework.boot.test.autoconfigure.web.client.MockRestServiceServerResetTestExecutionListener, org.springframework.boot.test.autoconfigure.web.servlet.MockMvcPrintOnlyOnFailureTestExecutionListener, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverTestExecutionListener, org.springframework.boot.test.mock.mockito.MockitoTestExecutionListener, org.springframework.boot.test.mock.mockito.ResetMocksTestExecutionListener, org.springframework.test.context.web.ServletTestExecutionListener, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener, org.springframework.test.context.support.DependencyInjectionTestExecutionListener, org.springframework.test.context.support.DirtiesContextTestExecutionListener, org.springframework.test.context.transaction.TransactionalTestExecutionListener, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener]
+21:12:17.494[INFO ][main]o.s.b.t.c.SpringBootTestContextBootstrapper - Using TestExecutionListeners: [org.springframework.test.context.web.ServletTestExecutionListener@4f0100a7, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener@3cdf2c61, org.springframework.boot.test.mock.mockito.MockitoTestExecutionListener@13ad5cd3, org.springframework.boot.test.autoconfigure.SpringBootDependencyInjectionTestExecutionListener@1c33c17b, org.springframework.test.context.support.DirtiesContextTestExecutionListener@5bf0fe62, org.springframework.test.context.transaction.TransactionalTestExecutionListener@1e097d59, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener@673be18f, org.springframework.boot.test.autoconfigure.restdocs.RestDocsTestExecutionListener@6581dc0a, org.springframework.boot.test.autoconfigure.web.client.MockRestServiceServerResetTestExecutionListener@39de3d36, org.springframework.boot.test.autoconfigure.web.servlet.MockMvcPrintOnlyOnFailureTestExecutionListener@6ce86ce1, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverTestExecutionListener@54e7df6a, org.springframework.boot.test.mock.mockito.ResetMocksTestExecutionListener@3fed2870]
+21:12:17.786[INFO ][main]c.e.demo.MybatisTestApplicationTests - Starting MybatisTestApplicationTests on DESKTOP-Jungle with PID 4468 (started by wangjiang in E:\jungle\MyabtisTest)
+21:12:17.786[INFO ][main]c.e.demo.MybatisTestApplicationTests - No active profile set, falling back to default profiles: default
+21:12:18.359[INFO ][main]o.s.d.r.c.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode!
+21:12:18.360[INFO ][main]o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data repositories in DEFAULT mode.
+21:12:18.373[INFO ][main]o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 8ms. Found 0 repository interfaces.
+21:12:18.382[INFO ][main]o.s.d.r.c.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode!
+21:12:18.383[INFO ][main]o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data repositories in DEFAULT mode.
+21:12:18.389[INFO ][main]o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 1ms. Found 0 repository interfaces.
+21:12:18.496[WARN ][main]o.m.s.mapper.ClassPathMapperScanner - No MyBatis mapper was found in '[com.example.demo]' package. Please check your configuration.
+21:12:18.729[INFO ][main]o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'org.springframework.ws.config.annotation.DelegatingWsConfiguration' of type [org.springframework.ws.config.annotation.DelegatingWsConfiguration$$EnhancerBySpringCGLIB$$3b47ddad] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+21:12:18.762[INFO ][main]o.s.w.s.a.s.AnnotationActionEndpointMapping - Supporting [WS-Addressing August 2004, WS-Addressing 1.0]
+21:12:18.782[INFO ][main]o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$96b018ae] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+21:12:19.412[INFO ][main]o.s.s.c.ThreadPoolTaskExecutor - Initializing ExecutorService 'applicationTaskExecutor'
+21:12:19.497[INFO ][main]o.s.b.a.w.s.WelcomePageHandlerMapping - Adding welcome page: ServletContext resource [/index.html]
+21:12:20.779[INFO ][main]org.quartz.impl.StdSchedulerFactory - Using default implementation for ThreadExecutor
+21:12:20.793[INFO ][main]o.quartz.core.SchedulerSignalerImpl - Initialized Scheduler Signaller of type: class org.quartz.core.SchedulerSignalerImpl
+21:12:20.793[INFO ][main]org.quartz.core.QuartzScheduler - Quartz Scheduler v.2.3.0 created.
+21:12:20.793[INFO ][main]org.quartz.simpl.RAMJobStore - RAMJobStore initialized.
+21:12:20.794[INFO ][main]org.quartz.core.QuartzScheduler - Scheduler meta-data: Quartz Scheduler (v2.3.0) 'quartzScheduler' with instanceId 'NON_CLUSTERED'
   Scheduler class: 'org.quartz.core.QuartzScheduler' - running locally.
   NOT STARTED.
   Currently in standby mode.
@@ -202,41 +243,78 @@ Caused by: java.lang.ClassNotFoundException: com.test.dao.UserMapper
   Using thread pool 'org.quartz.simpl.SimpleThreadPool' - with 10 threads.
   Using job-store 'org.quartz.simpl.RAMJobStore' - which does not support persistence. and is not clustered.
 
-21:04:11.094[INFO ][main]org.quartz.impl.StdSchedulerFactory - Quartz scheduler 'quartzScheduler' initialized from an externally provided properties instance.
-21:04:11.094[INFO ][main]org.quartz.impl.StdSchedulerFactory - Quartz scheduler version: 2.3.1
-21:04:11.094[INFO ][main]org.quartz.core.QuartzScheduler - JobFactory set to: org.springframework.scheduling.quartz.SpringBeanJobFactory@7b25ab31
-21:04:11.147[WARN ][main]o.s.b.s.r.RedisStarterDeprecationWarningAutoConfiguration - spring-boot-starter-redis is deprecated as of Spring Boot 1.4, please migrate to spring-boot-starter-data-redis
-21:04:11.188[INFO ][main]o.s.s.quartz.SchedulerFactoryBean - Starting Quartz Scheduler now
-21:04:11.188[INFO ][main]org.quartz.core.QuartzScheduler - Scheduler quartzScheduler_$_NON_CLUSTERED started.
-21:04:11.193[INFO ][main]o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8080"]
-21:04:11.210[INFO ][main]o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port(s): 8080 (http) with context path ''
-21:04:11.212[INFO ][main]c.e.demo.MybatisTestApplication - Started MybatisTestApplication in 2.843 seconds (JVM running for 3.297)
-21:04:23.315[INFO ][main]o.s.b.t.c.SpringBootTestContextBootstrapper - Neither @ContextConfiguration nor @ContextHierarchy found for test class [com.example.demo.MybatisTestApplicationTests], using SpringBootContextLoader
-21:04:23.319[INFO ][main]o.s.t.c.s.AbstractContextLoader - Could not detect default resource locations for test class [com.example.demo.MybatisTestApplicationTests]: no resource found for suffixes {-context.xml, Context.groovy}.
-21:04:23.320[INFO ][main]o.s.t.c.s.AnnotationConfigContextLoaderUtils - Could not detect default configuration classes for test class [com.example.demo.MybatisTestApplicationTests]: MybatisTestApplicationTests does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
-21:04:23.400[INFO ][main]o.s.b.t.c.SpringBootTestContextBootstrapper - Found @SpringBootConfiguration com.example.demo.MybatisTestApplication for test class com.example.demo.MybatisTestApplicationTests
-21:04:23.465[INFO ][main]o.s.b.t.c.SpringBootTestContextBootstrapper - Loaded default TestExecutionListener class names from location [META-INF/spring.factories]: [org.springframework.boot.test.mock.mockito.MockitoTestExecutionListener, org.springframework.boot.test.mock.mockito.ResetMocksTestExecutionListener, org.springframework.boot.test.autoconfigure.restdocs.RestDocsTestExecutionListener, org.springframework.boot.test.autoconfigure.web.client.MockRestServiceServerResetTestExecutionListener, org.springframework.boot.test.autoconfigure.web.servlet.MockMvcPrintOnlyOnFailureTestExecutionListener, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverTestExecutionListener, org.springframework.test.context.web.ServletTestExecutionListener, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener, org.springframework.test.context.support.DependencyInjectionTestExecutionListener, org.springframework.test.context.support.DirtiesContextTestExecutionListener, org.springframework.test.context.transaction.TransactionalTestExecutionListener, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener]
-21:04:23.477[INFO ][main]o.s.b.t.c.SpringBootTestContextBootstrapper - Using TestExecutionListeners: [org.springframework.test.context.web.ServletTestExecutionListener@5f9b2141, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener@247d8ae, org.springframework.boot.test.mock.mockito.MockitoTestExecutionListener@48974e45, org.springframework.boot.test.autoconfigure.SpringBootDependencyInjectionTestExecutionListener@6a84a97d, org.springframework.test.context.support.DirtiesContextTestExecutionListener@6c130c45, org.springframework.test.context.transaction.TransactionalTestExecutionListener@50ad3bc1, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener@223aa2f7, org.springframework.boot.test.mock.mockito.ResetMocksTestExecutionListener@6d3a388c, org.springframework.boot.test.autoconfigure.restdocs.RestDocsTestExecutionListener@193f604a, org.springframework.boot.test.autoconfigure.web.client.MockRestServiceServerResetTestExecutionListener@20f5239f, org.springframework.boot.test.autoconfigure.web.servlet.MockMvcPrintOnlyOnFailureTestExecutionListener@57af006c, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverTestExecutionListener@6bedbc4d]
-21:04:23.611[INFO ][background-preinit]o.h.validator.internal.util.Version - HV000001: Hibernate Validator 6.0.17.Final
-21:04:23.656[INFO ][main]c.e.demo.MybatisTestApplicationTests - Starting MybatisTestApplicationTests on DESKTOP-Jungle with PID 16716 (started by wangjiang in E:\jungle\MyabtisTest)
-21:04:23.656[INFO ][main]c.e.demo.MybatisTestApplicationTests - No active profile set, falling back to default profiles: default
-21:04:24.147[INFO ][main]o.s.d.r.c.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode!
-21:04:24.148[INFO ][main]o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data repositories in DEFAULT mode.
-21:04:24.157[INFO ][main]o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 5ms. Found 0 repository interfaces.
-21:04:24.166[INFO ][main]o.s.d.r.c.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode!
-21:04:24.167[INFO ][main]o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data repositories in DEFAULT mode.
-21:04:24.175[INFO ][main]o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 1ms. Found 0 repository interfaces.
-21:04:24.273[WARN ][main]o.m.s.mapper.ClassPathMapperScanner - No MyBatis mapper was found in '[com.example.demo]' package. Please check your configuration.
-21:04:24.492[INFO ][main]o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'org.springframework.ws.config.annotation.DelegatingWsConfiguration' of type [org.springframework.ws.config.annotation.DelegatingWsConfiguration$$EnhancerBySpringCGLIB$$bd08e858] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
-21:04:24.520[INFO ][main]o.s.w.s.a.s.AnnotationActionEndpointMapping - Supporting [WS-Addressing August 2004, WS-Addressing 1.0]
-21:04:24.535[INFO ][main]o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$18712359] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
-21:04:25.137[INFO ][main]o.s.s.c.ThreadPoolTaskExecutor - Initializing ExecutorService 'applicationTaskExecutor'
-21:04:25.197[INFO ][main]o.s.b.a.w.s.WelcomePageHandlerMapping - Adding welcome page: ServletContext resource [/index.html]
-21:04:26.312[INFO ][main]org.quartz.impl.StdSchedulerFactory - Using default implementation for ThreadExecutor
-21:04:26.321[INFO ][main]o.quartz.core.SchedulerSignalerImpl - Initialized Scheduler Signaller of type: class org.quartz.core.SchedulerSignalerImpl
-21:04:26.321[INFO ][main]org.quartz.core.QuartzScheduler - Quartz Scheduler v.2.3.1 created.
-21:04:26.322[INFO ][main]org.quartz.simpl.RAMJobStore - RAMJobStore initialized.
-21:04:26.322[INFO ][main]org.quartz.core.QuartzScheduler - Scheduler meta-data: Quartz Scheduler (v2.3.1) 'quartzScheduler' with instanceId 'NON_CLUSTERED'
+21:12:20.794[INFO ][main]org.quartz.impl.StdSchedulerFactory - Quartz scheduler 'quartzScheduler' initialized from an externally provided properties instance.
+21:12:20.794[INFO ][main]org.quartz.impl.StdSchedulerFactory - Quartz scheduler version: 2.3.0
+21:12:20.794[INFO ][main]org.quartz.core.QuartzScheduler - JobFactory set to: org.springframework.scheduling.quartz.SpringBeanJobFactory@48d44b46
+21:12:20.940[WARN ][main]o.s.b.s.r.RedisStarterDeprecationWarningAutoConfiguration - spring-boot-starter-redis is deprecated as of Spring Boot 1.4, please migrate to spring-boot-starter-data-redis
+21:12:20.951[INFO ][main]o.s.s.quartz.SchedulerFactoryBean - Starting Quartz Scheduler now
+21:12:20.951[INFO ][main]org.quartz.core.QuartzScheduler - Scheduler quartzScheduler_$_NON_CLUSTERED started.
+21:12:20.958[INFO ][main]c.e.demo.MybatisTestApplicationTests - Started MybatisTestApplicationTests in 3.421 seconds (JVM running for 4.263)
+21:12:20.996[ERROR][main]o.s.test.context.TestContextManager - Caught exception while allowing TestExecutionListener [org.springframework.boot.test.autoconfigure.SpringBootDependencyInjectionTestExecutionListener@1c33c17b] to prepare test instance [com.example.demo.MybatisTestApplicationTests@6906be0f]
+org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'com.example.demo.MybatisTestApplicationTests': Unsatisfied dependency expressed through field 'sendMailService'; nested exception is org.springframework.beans.factory.NoSuchBeanDefinitionException: No qualifying bean of type 'com.test.mail.service.SendMailService' available: expected at least 1 bean which qualifies as autowire candidate. Dependency annotations: {@org.springframework.beans.factory.annotation.Autowired(required=true)}
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor$AutowiredFieldElement.inject(AutowiredAnnotationBeanPostProcessor.java:596) ~[spring-beans-5.1.9.RELEASE.jar:5.1.9.RELEASE]
+	at org.springframework.beans.factory.annotation.InjectionMetadata.inject(InjectionMetadata.java:90) ~[spring-beans-5.1.9.RELEASE.jar:5.1.9.RELEASE]
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor.postProcessProperties(AutowiredAnnotationBeanPostProcessor.java:374) ~[spring-beans-5.1.9.RELEASE.jar:5.1.9.RELEASE]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.populateBean(AbstractAutowireCapableBeanFactory.java:1411) ~[spring-beans-5.1.9.RELEASE.jar:5.1.9.RELEASE]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.autowireBeanProperties(AbstractAutowireCapableBeanFactory.java:391) ~[spring-beans-5.1.9.RELEASE.jar:5.1.9.RELEASE]
+	at org.springframework.test.context.support.DependencyInjectionTestExecutionListener.injectDependencies(DependencyInjectionTestExecutionListener.java:119) ~[spring-test-5.1.9.RELEASE.jar:5.1.9.RELEASE]
+	at org.springframework.test.context.support.DependencyInjectionTestExecutionListener.prepareTestInstance(DependencyInjectionTestExecutionListener.java:83) ~[spring-test-5.1.9.RELEASE.jar:5.1.9.RELEASE]
+	at org.springframework.boot.test.autoconfigure.SpringBootDependencyInjectionTestExecutionListener.prepareTestInstance(SpringBootDependencyInjectionTestExecutionListener.java:43) ~[spring-boot-test-autoconfigure-2.1.8.RELEASE.jar:2.1.8.RELEASE]
+	at org.springframework.test.context.TestContextManager.prepareTestInstance(TestContextManager.java:246) ~[spring-test-5.1.9.RELEASE.jar:5.1.9.RELEASE]
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.createTest(SpringJUnit4ClassRunner.java:227) [spring-test-5.1.9.RELEASE.jar:5.1.9.RELEASE]
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner$1.runReflectiveCall(SpringJUnit4ClassRunner.java:289) [spring-test-5.1.9.RELEASE.jar:5.1.9.RELEASE]
+	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12) [junit-4.12.jar:4.12]
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.methodBlock(SpringJUnit4ClassRunner.java:291) [spring-test-5.1.9.RELEASE.jar:5.1.9.RELEASE]
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.runChild(SpringJUnit4ClassRunner.java:246) [spring-test-5.1.9.RELEASE.jar:5.1.9.RELEASE]
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.runChild(SpringJUnit4ClassRunner.java:97) [spring-test-5.1.9.RELEASE.jar:5.1.9.RELEASE]
+	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:290) [junit-4.12.jar:4.12]
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:71) [junit-4.12.jar:4.12]
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:288) [junit-4.12.jar:4.12]
+	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:58) [junit-4.12.jar:4.12]
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:268) [junit-4.12.jar:4.12]
+	at org.springframework.test.context.junit4.statements.RunBeforeTestClassCallbacks.evaluate(RunBeforeTestClassCallbacks.java:61) [spring-test-5.1.9.RELEASE.jar:5.1.9.RELEASE]
+	at org.springframework.test.context.junit4.statements.RunAfterTestClassCallbacks.evaluate(RunAfterTestClassCallbacks.java:70) [spring-test-5.1.9.RELEASE.jar:5.1.9.RELEASE]
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:363) [junit-4.12.jar:4.12]
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.run(SpringJUnit4ClassRunner.java:190) [spring-test-5.1.9.RELEASE.jar:5.1.9.RELEASE]
+	at org.junit.runner.JUnitCore.run(JUnitCore.java:137) [junit-4.12.jar:4.12]
+	at com.intellij.junit4.JUnit4IdeaTestRunner.startRunnerWithArgs(JUnit4IdeaTestRunner.java:69) [junit-rt.jar:na]
+	at com.intellij.rt.execution.junit.JUnitStarter.prepareStreamsAndStart(JUnitStarter.java:234) [junit-rt.jar:na]
+	at com.intellij.rt.execution.junit.JUnitStarter.main(JUnitStarter.java:74) [junit-rt.jar:na]
+Caused by: org.springframework.beans.factory.NoSuchBeanDefinitionException: No qualifying bean of type 'com.test.mail.service.SendMailService' available: expected at least 1 bean which qualifies as autowire candidate. Dependency annotations: {@org.springframework.beans.factory.annotation.Autowired(required=true)}
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.raiseNoMatchingBeanFound(DefaultListableBeanFactory.java:1658) ~[spring-beans-5.1.9.RELEASE.jar:5.1.9.RELEASE]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.doResolveDependency(DefaultListableBeanFactory.java:1217) ~[spring-beans-5.1.9.RELEASE.jar:5.1.9.RELEASE]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.resolveDependency(DefaultListableBeanFactory.java:1171) ~[spring-beans-5.1.9.RELEASE.jar:5.1.9.RELEASE]
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor$AutowiredFieldElement.inject(AutowiredAnnotationBeanPostProcessor.java:593) ~[spring-beans-5.1.9.RELEASE.jar:5.1.9.RELEASE]
+	... 27 common frames omitted
+21:12:21.014[INFO ][Thread-2]org.quartz.core.QuartzScheduler - Scheduler quartzScheduler_$_NON_CLUSTERED paused.
+21:12:21.017[INFO ][Thread-2]o.s.s.quartz.SchedulerFactoryBean - Shutting down Quartz Scheduler
+21:12:21.017[INFO ][Thread-2]org.quartz.core.QuartzScheduler - Scheduler quartzScheduler_$_NON_CLUSTERED shutting down.
+21:12:21.018[INFO ][Thread-2]org.quartz.core.QuartzScheduler - Scheduler quartzScheduler_$_NON_CLUSTERED paused.
+21:12:21.018[INFO ][Thread-2]org.quartz.core.QuartzScheduler - Scheduler quartzScheduler_$_NON_CLUSTERED shutdown complete.
+21:12:21.033[INFO ][Thread-2]o.s.s.c.ThreadPoolTaskExecutor - Shutting down ExecutorService 'applicationTaskExecutor'
+21:13:40.095[INFO ][main]o.s.b.t.c.SpringBootTestContextBootstrapper - Neither @ContextConfiguration nor @ContextHierarchy found for test class [com.test.mail.SendemailApplicationTestsTest], using SpringBootContextLoader
+21:13:40.101[INFO ][main]o.s.t.c.s.AbstractContextLoader - Could not detect default resource locations for test class [com.test.mail.SendemailApplicationTestsTest]: no resource found for suffixes {-context.xml, Context.groovy}.
+21:13:40.248[INFO ][main]o.s.b.t.c.SpringBootTestContextBootstrapper - Loaded default TestExecutionListener class names from location [META-INF/spring.factories]: [org.springframework.boot.test.autoconfigure.restdocs.RestDocsTestExecutionListener, org.springframework.boot.test.autoconfigure.web.client.MockRestServiceServerResetTestExecutionListener, org.springframework.boot.test.autoconfigure.web.servlet.MockMvcPrintOnlyOnFailureTestExecutionListener, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverTestExecutionListener, org.springframework.boot.test.mock.mockito.MockitoTestExecutionListener, org.springframework.boot.test.mock.mockito.ResetMocksTestExecutionListener, org.springframework.test.context.web.ServletTestExecutionListener, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener, org.springframework.test.context.support.DependencyInjectionTestExecutionListener, org.springframework.test.context.support.DirtiesContextTestExecutionListener, org.springframework.test.context.transaction.TransactionalTestExecutionListener, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener]
+21:13:40.265[INFO ][main]o.s.b.t.c.SpringBootTestContextBootstrapper - Using TestExecutionListeners: [org.springframework.test.context.web.ServletTestExecutionListener@4278284b, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener@9573584, org.springframework.boot.test.mock.mockito.MockitoTestExecutionListener@3370f42, org.springframework.boot.test.autoconfigure.SpringBootDependencyInjectionTestExecutionListener@6057aebb, org.springframework.test.context.support.DirtiesContextTestExecutionListener@63eef88a, org.springframework.test.context.transaction.TransactionalTestExecutionListener@53251a66, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener@6853425f, org.springframework.boot.test.autoconfigure.restdocs.RestDocsTestExecutionListener@352c1b98, org.springframework.boot.test.autoconfigure.web.client.MockRestServiceServerResetTestExecutionListener@21129f1f, org.springframework.boot.test.autoconfigure.web.servlet.MockMvcPrintOnlyOnFailureTestExecutionListener@5a9f4771, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverTestExecutionListener@282cb7c7, org.springframework.boot.test.mock.mockito.ResetMocksTestExecutionListener@7d898981]
+21:13:40.544[INFO ][main]c.t.m.SendemailApplicationTestsTest - Starting SendemailApplicationTestsTest on DESKTOP-Jungle with PID 17700 (started by wangjiang in E:\jungle\MyabtisTest)
+21:13:40.544[INFO ][main]c.t.m.SendemailApplicationTestsTest - No active profile set, falling back to default profiles: default
+21:13:41.155[INFO ][main]o.s.d.r.c.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode!
+21:13:41.156[INFO ][main]o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data repositories in DEFAULT mode.
+21:13:41.165[INFO ][main]o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 5ms. Found 0 repository interfaces.
+21:13:41.175[INFO ][main]o.s.d.r.c.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode!
+21:13:41.176[INFO ][main]o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data repositories in DEFAULT mode.
+21:13:41.183[INFO ][main]o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 1ms. Found 0 repository interfaces.
+21:13:41.291[WARN ][main]o.m.s.mapper.ClassPathMapperScanner - No MyBatis mapper was found in '[com.example.demo]' package. Please check your configuration.
+21:13:41.533[INFO ][main]o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'org.springframework.ws.config.annotation.DelegatingWsConfiguration' of type [org.springframework.ws.config.annotation.DelegatingWsConfiguration$$EnhancerBySpringCGLIB$$8d90790b] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+21:13:41.567[INFO ][main]o.s.w.s.a.s.AnnotationActionEndpointMapping - Supporting [WS-Addressing August 2004, WS-Addressing 1.0]
+21:13:41.589[INFO ][main]o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$e8f8b40c] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+21:13:42.212[INFO ][main]o.s.s.c.ThreadPoolTaskExecutor - Initializing ExecutorService 'applicationTaskExecutor'
+21:13:42.288[INFO ][main]o.s.b.a.w.s.WelcomePageHandlerMapping - Adding welcome page: ServletContext resource [/index.html]
+21:13:43.618[INFO ][main]org.quartz.impl.StdSchedulerFactory - Using default implementation for ThreadExecutor
+21:13:43.632[INFO ][main]o.quartz.core.SchedulerSignalerImpl - Initialized Scheduler Signaller of type: class org.quartz.core.SchedulerSignalerImpl
+21:13:43.633[INFO ][main]org.quartz.core.QuartzScheduler - Quartz Scheduler v.2.3.0 created.
+21:13:43.633[INFO ][main]org.quartz.simpl.RAMJobStore - RAMJobStore initialized.
+21:13:43.634[INFO ][main]org.quartz.core.QuartzScheduler - Scheduler meta-data: Quartz Scheduler (v2.3.0) 'quartzScheduler' with instanceId 'NON_CLUSTERED'
   Scheduler class: 'org.quartz.core.QuartzScheduler' - running locally.
   NOT STARTED.
   Currently in standby mode.
@@ -244,44 +322,78 @@ Caused by: java.lang.ClassNotFoundException: com.test.dao.UserMapper
   Using thread pool 'org.quartz.simpl.SimpleThreadPool' - with 10 threads.
   Using job-store 'org.quartz.simpl.RAMJobStore' - which does not support persistence. and is not clustered.
 
-21:04:26.322[INFO ][main]org.quartz.impl.StdSchedulerFactory - Quartz scheduler 'quartzScheduler' initialized from an externally provided properties instance.
-21:04:26.322[INFO ][main]org.quartz.impl.StdSchedulerFactory - Quartz scheduler version: 2.3.1
-21:04:26.322[INFO ][main]org.quartz.core.QuartzScheduler - JobFactory set to: org.springframework.scheduling.quartz.SpringBeanJobFactory@4d93f75b
-21:04:26.425[WARN ][main]o.s.b.s.r.RedisStarterDeprecationWarningAutoConfiguration - spring-boot-starter-redis is deprecated as of Spring Boot 1.4, please migrate to spring-boot-starter-data-redis
-21:04:26.433[INFO ][main]o.s.s.quartz.SchedulerFactoryBean - Starting Quartz Scheduler now
-21:04:26.434[INFO ][main]org.quartz.core.QuartzScheduler - Scheduler quartzScheduler_$_NON_CLUSTERED started.
-21:04:26.440[INFO ][main]c.e.demo.MybatisTestApplicationTests - Started MybatisTestApplicationTests in 2.937 seconds (JVM running for 3.58)
-21:04:26.615[INFO ][Thread-2]org.quartz.core.QuartzScheduler - Scheduler quartzScheduler_$_NON_CLUSTERED paused.
-21:04:26.620[INFO ][Thread-2]o.s.s.quartz.SchedulerFactoryBean - Shutting down Quartz Scheduler
-21:04:26.620[INFO ][Thread-2]org.quartz.core.QuartzScheduler - Scheduler quartzScheduler_$_NON_CLUSTERED shutting down.
-21:04:26.621[INFO ][Thread-2]org.quartz.core.QuartzScheduler - Scheduler quartzScheduler_$_NON_CLUSTERED paused.
-21:04:26.621[INFO ][Thread-2]org.quartz.core.QuartzScheduler - Scheduler quartzScheduler_$_NON_CLUSTERED shutdown complete.
-21:04:26.633[INFO ][Thread-2]o.s.s.c.ThreadPoolTaskExecutor - Shutting down ExecutorService 'applicationTaskExecutor'
-21:09:06.213[INFO ][main]o.s.b.t.c.SpringBootTestContextBootstrapper - Neither @ContextConfiguration nor @ContextHierarchy found for test class [com.example.demo.MybatisTestApplicationTests], using SpringBootContextLoader
-21:09:06.217[INFO ][main]o.s.t.c.s.AbstractContextLoader - Could not detect default resource locations for test class [com.example.demo.MybatisTestApplicationTests]: no resource found for suffixes {-context.xml, Context.groovy}.
-21:09:06.218[INFO ][main]o.s.t.c.s.AnnotationConfigContextLoaderUtils - Could not detect default configuration classes for test class [com.example.demo.MybatisTestApplicationTests]: MybatisTestApplicationTests does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
-21:09:06.300[INFO ][main]o.s.b.t.c.SpringBootTestContextBootstrapper - Found @SpringBootConfiguration com.example.demo.MybatisTestApplication for test class com.example.demo.MybatisTestApplicationTests
-21:09:06.368[INFO ][main]o.s.b.t.c.SpringBootTestContextBootstrapper - Loaded default TestExecutionListener class names from location [META-INF/spring.factories]: [org.springframework.boot.test.mock.mockito.MockitoTestExecutionListener, org.springframework.boot.test.mock.mockito.ResetMocksTestExecutionListener, org.springframework.boot.test.autoconfigure.restdocs.RestDocsTestExecutionListener, org.springframework.boot.test.autoconfigure.web.client.MockRestServiceServerResetTestExecutionListener, org.springframework.boot.test.autoconfigure.web.servlet.MockMvcPrintOnlyOnFailureTestExecutionListener, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverTestExecutionListener, org.springframework.test.context.web.ServletTestExecutionListener, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener, org.springframework.test.context.support.DependencyInjectionTestExecutionListener, org.springframework.test.context.support.DirtiesContextTestExecutionListener, org.springframework.test.context.transaction.TransactionalTestExecutionListener, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener]
-21:09:06.381[INFO ][main]o.s.b.t.c.SpringBootTestContextBootstrapper - Using TestExecutionListeners: [org.springframework.test.context.web.ServletTestExecutionListener@5f9b2141, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener@247d8ae, org.springframework.boot.test.mock.mockito.MockitoTestExecutionListener@48974e45, org.springframework.boot.test.autoconfigure.SpringBootDependencyInjectionTestExecutionListener@6a84a97d, org.springframework.test.context.support.DirtiesContextTestExecutionListener@6c130c45, org.springframework.test.context.transaction.TransactionalTestExecutionListener@50ad3bc1, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener@223aa2f7, org.springframework.boot.test.mock.mockito.ResetMocksTestExecutionListener@6d3a388c, org.springframework.boot.test.autoconfigure.restdocs.RestDocsTestExecutionListener@193f604a, org.springframework.boot.test.autoconfigure.web.client.MockRestServiceServerResetTestExecutionListener@20f5239f, org.springframework.boot.test.autoconfigure.web.servlet.MockMvcPrintOnlyOnFailureTestExecutionListener@57af006c, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverTestExecutionListener@6bedbc4d]
-21:09:06.564[INFO ][main]c.e.demo.MybatisTestApplicationTests - Starting MybatisTestApplicationTests on DESKTOP-Jungle with PID 4164 (started by wangjiang in E:\jungle\MyabtisTest)
-21:09:06.565[INFO ][main]c.e.demo.MybatisTestApplicationTests - No active profile set, falling back to default profiles: default
-21:09:07.156[INFO ][main]o.s.d.r.c.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode!
-21:09:07.157[INFO ][main]o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data repositories in DEFAULT mode.
-21:09:07.170[INFO ][main]o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 7ms. Found 0 repository interfaces.
-21:09:07.181[INFO ][main]o.s.d.r.c.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode!
-21:09:07.182[INFO ][main]o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data repositories in DEFAULT mode.
-21:09:07.189[INFO ][main]o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 1ms. Found 0 repository interfaces.
-21:09:07.298[WARN ][main]o.m.s.mapper.ClassPathMapperScanner - No MyBatis mapper was found in '[com.example.demo]' package. Please check your configuration.
-21:09:07.555[INFO ][main]o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'org.springframework.ws.config.annotation.DelegatingWsConfiguration' of type [org.springframework.ws.config.annotation.DelegatingWsConfiguration$$EnhancerBySpringCGLIB$$b3cb02da] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
-21:09:07.588[INFO ][main]o.s.w.s.a.s.AnnotationActionEndpointMapping - Supporting [WS-Addressing August 2004, WS-Addressing 1.0]
-21:09:07.604[INFO ][main]o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$f333ddb] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
-21:09:08.267[INFO ][main]o.s.s.c.ThreadPoolTaskExecutor - Initializing ExecutorService 'applicationTaskExecutor'
-21:09:08.355[INFO ][main]o.s.b.a.w.s.WelcomePageHandlerMapping - Adding welcome page: ServletContext resource [/index.html]
-21:09:09.714[INFO ][main]org.quartz.impl.StdSchedulerFactory - Using default implementation for ThreadExecutor
-21:09:09.727[INFO ][main]o.quartz.core.SchedulerSignalerImpl - Initialized Scheduler Signaller of type: class org.quartz.core.SchedulerSignalerImpl
-21:09:09.727[INFO ][main]org.quartz.core.QuartzScheduler - Quartz Scheduler v.2.3.1 created.
-21:09:09.727[INFO ][main]org.quartz.simpl.RAMJobStore - RAMJobStore initialized.
-21:09:09.728[INFO ][main]org.quartz.core.QuartzScheduler - Scheduler meta-data: Quartz Scheduler (v2.3.1) 'quartzScheduler' with instanceId 'NON_CLUSTERED'
+21:13:43.634[INFO ][main]org.quartz.impl.StdSchedulerFactory - Quartz scheduler 'quartzScheduler' initialized from an externally provided properties instance.
+21:13:43.634[INFO ][main]org.quartz.impl.StdSchedulerFactory - Quartz scheduler version: 2.3.0
+21:13:43.634[INFO ][main]org.quartz.core.QuartzScheduler - JobFactory set to: org.springframework.scheduling.quartz.SpringBeanJobFactory@3c3ab672
+21:13:43.761[WARN ][main]o.s.b.s.r.RedisStarterDeprecationWarningAutoConfiguration - spring-boot-starter-redis is deprecated as of Spring Boot 1.4, please migrate to spring-boot-starter-data-redis
+21:13:43.770[INFO ][main]o.s.s.quartz.SchedulerFactoryBean - Starting Quartz Scheduler now
+21:13:43.770[INFO ][main]org.quartz.core.QuartzScheduler - Scheduler quartzScheduler_$_NON_CLUSTERED started.
+21:13:43.776[INFO ][main]c.t.m.SendemailApplicationTestsTest - Started SendemailApplicationTestsTest in 3.464 seconds (JVM running for 4.252)
+21:13:43.812[ERROR][main]o.s.test.context.TestContextManager - Caught exception while allowing TestExecutionListener [org.springframework.boot.test.autoconfigure.SpringBootDependencyInjectionTestExecutionListener@6057aebb] to prepare test instance [com.test.mail.SendemailApplicationTestsTest@5bbf744b]
+org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'com.test.mail.SendemailApplicationTestsTest': Unsatisfied dependency expressed through field 'sendMailService'; nested exception is org.springframework.beans.factory.NoSuchBeanDefinitionException: No qualifying bean of type 'com.test.mail.service.SendMailService' available: expected at least 1 bean which qualifies as autowire candidate. Dependency annotations: {@org.springframework.beans.factory.annotation.Autowired(required=true)}
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor$AutowiredFieldElement.inject(AutowiredAnnotationBeanPostProcessor.java:596) ~[spring-beans-5.1.9.RELEASE.jar:5.1.9.RELEASE]
+	at org.springframework.beans.factory.annotation.InjectionMetadata.inject(InjectionMetadata.java:90) ~[spring-beans-5.1.9.RELEASE.jar:5.1.9.RELEASE]
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor.postProcessProperties(AutowiredAnnotationBeanPostProcessor.java:374) ~[spring-beans-5.1.9.RELEASE.jar:5.1.9.RELEASE]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.populateBean(AbstractAutowireCapableBeanFactory.java:1411) ~[spring-beans-5.1.9.RELEASE.jar:5.1.9.RELEASE]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.autowireBeanProperties(AbstractAutowireCapableBeanFactory.java:391) ~[spring-beans-5.1.9.RELEASE.jar:5.1.9.RELEASE]
+	at org.springframework.test.context.support.DependencyInjectionTestExecutionListener.injectDependencies(DependencyInjectionTestExecutionListener.java:119) ~[spring-test-5.1.9.RELEASE.jar:5.1.9.RELEASE]
+	at org.springframework.test.context.support.DependencyInjectionTestExecutionListener.prepareTestInstance(DependencyInjectionTestExecutionListener.java:83) ~[spring-test-5.1.9.RELEASE.jar:5.1.9.RELEASE]
+	at org.springframework.boot.test.autoconfigure.SpringBootDependencyInjectionTestExecutionListener.prepareTestInstance(SpringBootDependencyInjectionTestExecutionListener.java:43) ~[spring-boot-test-autoconfigure-2.1.8.RELEASE.jar:2.1.8.RELEASE]
+	at org.springframework.test.context.TestContextManager.prepareTestInstance(TestContextManager.java:246) ~[spring-test-5.1.9.RELEASE.jar:5.1.9.RELEASE]
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.createTest(SpringJUnit4ClassRunner.java:227) [spring-test-5.1.9.RELEASE.jar:5.1.9.RELEASE]
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner$1.runReflectiveCall(SpringJUnit4ClassRunner.java:289) [spring-test-5.1.9.RELEASE.jar:5.1.9.RELEASE]
+	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12) [junit-4.12.jar:4.12]
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.methodBlock(SpringJUnit4ClassRunner.java:291) [spring-test-5.1.9.RELEASE.jar:5.1.9.RELEASE]
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.runChild(SpringJUnit4ClassRunner.java:246) [spring-test-5.1.9.RELEASE.jar:5.1.9.RELEASE]
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.runChild(SpringJUnit4ClassRunner.java:97) [spring-test-5.1.9.RELEASE.jar:5.1.9.RELEASE]
+	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:290) [junit-4.12.jar:4.12]
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:71) [junit-4.12.jar:4.12]
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:288) [junit-4.12.jar:4.12]
+	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:58) [junit-4.12.jar:4.12]
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:268) [junit-4.12.jar:4.12]
+	at org.springframework.test.context.junit4.statements.RunBeforeTestClassCallbacks.evaluate(RunBeforeTestClassCallbacks.java:61) [spring-test-5.1.9.RELEASE.jar:5.1.9.RELEASE]
+	at org.springframework.test.context.junit4.statements.RunAfterTestClassCallbacks.evaluate(RunAfterTestClassCallbacks.java:70) [spring-test-5.1.9.RELEASE.jar:5.1.9.RELEASE]
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:363) [junit-4.12.jar:4.12]
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.run(SpringJUnit4ClassRunner.java:190) [spring-test-5.1.9.RELEASE.jar:5.1.9.RELEASE]
+	at org.junit.runner.JUnitCore.run(JUnitCore.java:137) [junit-4.12.jar:4.12]
+	at com.intellij.junit4.JUnit4IdeaTestRunner.startRunnerWithArgs(JUnit4IdeaTestRunner.java:69) [junit-rt.jar:na]
+	at com.intellij.rt.execution.junit.JUnitStarter.prepareStreamsAndStart(JUnitStarter.java:234) [junit-rt.jar:na]
+	at com.intellij.rt.execution.junit.JUnitStarter.main(JUnitStarter.java:74) [junit-rt.jar:na]
+Caused by: org.springframework.beans.factory.NoSuchBeanDefinitionException: No qualifying bean of type 'com.test.mail.service.SendMailService' available: expected at least 1 bean which qualifies as autowire candidate. Dependency annotations: {@org.springframework.beans.factory.annotation.Autowired(required=true)}
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.raiseNoMatchingBeanFound(DefaultListableBeanFactory.java:1658) ~[spring-beans-5.1.9.RELEASE.jar:5.1.9.RELEASE]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.doResolveDependency(DefaultListableBeanFactory.java:1217) ~[spring-beans-5.1.9.RELEASE.jar:5.1.9.RELEASE]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.resolveDependency(DefaultListableBeanFactory.java:1171) ~[spring-beans-5.1.9.RELEASE.jar:5.1.9.RELEASE]
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor$AutowiredFieldElement.inject(AutowiredAnnotationBeanPostProcessor.java:593) ~[spring-beans-5.1.9.RELEASE.jar:5.1.9.RELEASE]
+	... 27 common frames omitted
+21:13:43.830[INFO ][Thread-2]org.quartz.core.QuartzScheduler - Scheduler quartzScheduler_$_NON_CLUSTERED paused.
+21:13:43.834[INFO ][Thread-2]o.s.s.quartz.SchedulerFactoryBean - Shutting down Quartz Scheduler
+21:13:43.834[INFO ][Thread-2]org.quartz.core.QuartzScheduler - Scheduler quartzScheduler_$_NON_CLUSTERED shutting down.
+21:13:43.834[INFO ][Thread-2]org.quartz.core.QuartzScheduler - Scheduler quartzScheduler_$_NON_CLUSTERED paused.
+21:13:43.834[INFO ][Thread-2]org.quartz.core.QuartzScheduler - Scheduler quartzScheduler_$_NON_CLUSTERED shutdown complete.
+21:13:43.866[INFO ][Thread-2]o.s.s.c.ThreadPoolTaskExecutor - Shutting down ExecutorService 'applicationTaskExecutor'
+21:13:58.589[INFO ][main]o.s.b.t.c.SpringBootTestContextBootstrapper - Neither @ContextConfiguration nor @ContextHierarchy found for test class [com.test.mail.SendemailApplicationTestsTest], using SpringBootContextLoader
+21:13:58.593[INFO ][main]o.s.t.c.s.AbstractContextLoader - Could not detect default resource locations for test class [com.test.mail.SendemailApplicationTestsTest]: no resource found for suffixes {-context.xml, Context.groovy}.
+21:13:58.736[INFO ][main]o.s.b.t.c.SpringBootTestContextBootstrapper - Loaded default TestExecutionListener class names from location [META-INF/spring.factories]: [org.springframework.boot.test.autoconfigure.restdocs.RestDocsTestExecutionListener, org.springframework.boot.test.autoconfigure.web.client.MockRestServiceServerResetTestExecutionListener, org.springframework.boot.test.autoconfigure.web.servlet.MockMvcPrintOnlyOnFailureTestExecutionListener, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverTestExecutionListener, org.springframework.boot.test.mock.mockito.MockitoTestExecutionListener, org.springframework.boot.test.mock.mockito.ResetMocksTestExecutionListener, org.springframework.test.context.web.ServletTestExecutionListener, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener, org.springframework.test.context.support.DependencyInjectionTestExecutionListener, org.springframework.test.context.support.DirtiesContextTestExecutionListener, org.springframework.test.context.transaction.TransactionalTestExecutionListener, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener]
+21:13:58.749[INFO ][main]o.s.b.t.c.SpringBootTestContextBootstrapper - Using TestExecutionListeners: [org.springframework.test.context.web.ServletTestExecutionListener@4278284b, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener@9573584, org.springframework.boot.test.mock.mockito.MockitoTestExecutionListener@3370f42, org.springframework.boot.test.autoconfigure.SpringBootDependencyInjectionTestExecutionListener@6057aebb, org.springframework.test.context.support.DirtiesContextTestExecutionListener@63eef88a, org.springframework.test.context.transaction.TransactionalTestExecutionListener@53251a66, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener@6853425f, org.springframework.boot.test.autoconfigure.restdocs.RestDocsTestExecutionListener@352c1b98, org.springframework.boot.test.autoconfigure.web.client.MockRestServiceServerResetTestExecutionListener@21129f1f, org.springframework.boot.test.autoconfigure.web.servlet.MockMvcPrintOnlyOnFailureTestExecutionListener@5a9f4771, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverTestExecutionListener@282cb7c7, org.springframework.boot.test.mock.mockito.ResetMocksTestExecutionListener@7d898981]
+21:13:59.054[INFO ][main]c.t.m.SendemailApplicationTestsTest - Starting SendemailApplicationTestsTest on DESKTOP-Jungle with PID 5056 (started by wangjiang in E:\jungle\MyabtisTest)
+21:13:59.054[INFO ][main]c.t.m.SendemailApplicationTestsTest - No active profile set, falling back to default profiles: default
+21:13:59.652[INFO ][main]o.s.d.r.c.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode!
+21:13:59.653[INFO ][main]o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data repositories in DEFAULT mode.
+21:13:59.666[INFO ][main]o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 7ms. Found 0 repository interfaces.
+21:13:59.675[INFO ][main]o.s.d.r.c.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode!
+21:13:59.676[INFO ][main]o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data repositories in DEFAULT mode.
+21:13:59.683[INFO ][main]o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 1ms. Found 0 repository interfaces.
+21:13:59.796[WARN ][main]o.m.s.mapper.ClassPathMapperScanner - No MyBatis mapper was found in '[com.example.demo]' package. Please check your configuration.
+21:14:00.044[INFO ][main]o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'org.springframework.ws.config.annotation.DelegatingWsConfiguration' of type [org.springframework.ws.config.annotation.DelegatingWsConfiguration$$EnhancerBySpringCGLIB$$a4769cd6] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+21:14:00.078[INFO ][main]o.s.w.s.a.s.AnnotationActionEndpointMapping - Supporting [WS-Addressing August 2004, WS-Addressing 1.0]
+21:14:00.098[INFO ][main]o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$ffded7d7] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+21:14:00.752[INFO ][main]o.s.s.c.ThreadPoolTaskExecutor - Initializing ExecutorService 'applicationTaskExecutor'
+21:14:00.842[INFO ][main]o.s.b.a.w.s.WelcomePageHandlerMapping - Adding welcome page: ServletContext resource [/index.html]
+21:14:02.148[INFO ][main]org.quartz.impl.StdSchedulerFactory - Using default implementation for ThreadExecutor
+21:14:02.168[INFO ][main]o.quartz.core.SchedulerSignalerImpl - Initialized Scheduler Signaller of type: class org.quartz.core.SchedulerSignalerImpl
+21:14:02.168[INFO ][main]org.quartz.core.QuartzScheduler - Quartz Scheduler v.2.3.0 created.
+21:14:02.169[INFO ][main]org.quartz.simpl.RAMJobStore - RAMJobStore initialized.
+21:14:02.169[INFO ][main]org.quartz.core.QuartzScheduler - Scheduler meta-data: Quartz Scheduler (v2.3.0) 'quartzScheduler' with instanceId 'NON_CLUSTERED'
   Scheduler class: 'org.quartz.core.QuartzScheduler' - running locally.
   NOT STARTED.
   Currently in standby mode.
@@ -289,16 +401,95 @@ Caused by: java.lang.ClassNotFoundException: com.test.dao.UserMapper
   Using thread pool 'org.quartz.simpl.SimpleThreadPool' - with 10 threads.
   Using job-store 'org.quartz.simpl.RAMJobStore' - which does not support persistence. and is not clustered.
 
-21:09:09.728[INFO ][main]org.quartz.impl.StdSchedulerFactory - Quartz scheduler 'quartzScheduler' initialized from an externally provided properties instance.
-21:09:09.728[INFO ][main]org.quartz.impl.StdSchedulerFactory - Quartz scheduler version: 2.3.1
-21:09:09.728[INFO ][main]org.quartz.core.QuartzScheduler - JobFactory set to: org.springframework.scheduling.quartz.SpringBeanJobFactory@5d508d22
-21:09:09.875[WARN ][main]o.s.b.s.r.RedisStarterDeprecationWarningAutoConfiguration - spring-boot-starter-redis is deprecated as of Spring Boot 1.4, please migrate to spring-boot-starter-data-redis
-21:09:09.886[INFO ][main]o.s.s.quartz.SchedulerFactoryBean - Starting Quartz Scheduler now
-21:09:09.887[INFO ][main]org.quartz.core.QuartzScheduler - Scheduler quartzScheduler_$_NON_CLUSTERED started.
-21:09:09.894[INFO ][main]c.e.demo.MybatisTestApplicationTests - Started MybatisTestApplicationTests in 3.488 seconds (JVM running for 4.145)
-21:09:10.065[INFO ][Thread-2]org.quartz.core.QuartzScheduler - Scheduler quartzScheduler_$_NON_CLUSTERED paused.
-21:09:10.069[INFO ][Thread-2]o.s.s.quartz.SchedulerFactoryBean - Shutting down Quartz Scheduler
-21:09:10.069[INFO ][Thread-2]org.quartz.core.QuartzScheduler - Scheduler quartzScheduler_$_NON_CLUSTERED shutting down.
-21:09:10.069[INFO ][Thread-2]org.quartz.core.QuartzScheduler - Scheduler quartzScheduler_$_NON_CLUSTERED paused.
-21:09:10.069[INFO ][Thread-2]org.quartz.core.QuartzScheduler - Scheduler quartzScheduler_$_NON_CLUSTERED shutdown complete.
-21:09:10.082[INFO ][Thread-2]o.s.s.c.ThreadPoolTaskExecutor - Shutting down ExecutorService 'applicationTaskExecutor'
+21:14:02.169[INFO ][main]org.quartz.impl.StdSchedulerFactory - Quartz scheduler 'quartzScheduler' initialized from an externally provided properties instance.
+21:14:02.169[INFO ][main]org.quartz.impl.StdSchedulerFactory - Quartz scheduler version: 2.3.0
+21:14:02.169[INFO ][main]org.quartz.core.QuartzScheduler - JobFactory set to: org.springframework.scheduling.quartz.SpringBeanJobFactory@42a05533
+21:14:02.295[WARN ][main]o.s.b.s.r.RedisStarterDeprecationWarningAutoConfiguration - spring-boot-starter-redis is deprecated as of Spring Boot 1.4, please migrate to spring-boot-starter-data-redis
+21:14:02.307[INFO ][main]o.s.s.quartz.SchedulerFactoryBean - Starting Quartz Scheduler now
+21:14:02.307[INFO ][main]org.quartz.core.QuartzScheduler - Scheduler quartzScheduler_$_NON_CLUSTERED started.
+21:14:02.314[INFO ][main]c.t.m.SendemailApplicationTestsTest - Started SendemailApplicationTestsTest in 3.519 seconds (JVM running for 4.3)
+21:14:02.352[ERROR][main]o.s.test.context.TestContextManager - Caught exception while allowing TestExecutionListener [org.springframework.boot.test.autoconfigure.SpringBootDependencyInjectionTestExecutionListener@6057aebb] to prepare test instance [com.test.mail.SendemailApplicationTestsTest@25589735]
+org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'com.test.mail.SendemailApplicationTestsTest': Unsatisfied dependency expressed through field 'sendMailService'; nested exception is org.springframework.beans.factory.NoSuchBeanDefinitionException: No qualifying bean of type 'com.test.mail.service.SendMailService' available: expected at least 1 bean which qualifies as autowire candidate. Dependency annotations: {@org.springframework.beans.factory.annotation.Autowired(required=true)}
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor$AutowiredFieldElement.inject(AutowiredAnnotationBeanPostProcessor.java:596) ~[spring-beans-5.1.9.RELEASE.jar:5.1.9.RELEASE]
+	at org.springframework.beans.factory.annotation.InjectionMetadata.inject(InjectionMetadata.java:90) ~[spring-beans-5.1.9.RELEASE.jar:5.1.9.RELEASE]
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor.postProcessProperties(AutowiredAnnotationBeanPostProcessor.java:374) ~[spring-beans-5.1.9.RELEASE.jar:5.1.9.RELEASE]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.populateBean(AbstractAutowireCapableBeanFactory.java:1411) ~[spring-beans-5.1.9.RELEASE.jar:5.1.9.RELEASE]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.autowireBeanProperties(AbstractAutowireCapableBeanFactory.java:391) ~[spring-beans-5.1.9.RELEASE.jar:5.1.9.RELEASE]
+	at org.springframework.test.context.support.DependencyInjectionTestExecutionListener.injectDependencies(DependencyInjectionTestExecutionListener.java:119) ~[spring-test-5.1.9.RELEASE.jar:5.1.9.RELEASE]
+	at org.springframework.test.context.support.DependencyInjectionTestExecutionListener.prepareTestInstance(DependencyInjectionTestExecutionListener.java:83) ~[spring-test-5.1.9.RELEASE.jar:5.1.9.RELEASE]
+	at org.springframework.boot.test.autoconfigure.SpringBootDependencyInjectionTestExecutionListener.prepareTestInstance(SpringBootDependencyInjectionTestExecutionListener.java:43) ~[spring-boot-test-autoconfigure-2.1.8.RELEASE.jar:2.1.8.RELEASE]
+	at org.springframework.test.context.TestContextManager.prepareTestInstance(TestContextManager.java:246) ~[spring-test-5.1.9.RELEASE.jar:5.1.9.RELEASE]
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.createTest(SpringJUnit4ClassRunner.java:227) [spring-test-5.1.9.RELEASE.jar:5.1.9.RELEASE]
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner$1.runReflectiveCall(SpringJUnit4ClassRunner.java:289) [spring-test-5.1.9.RELEASE.jar:5.1.9.RELEASE]
+	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12) [junit-4.12.jar:4.12]
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.methodBlock(SpringJUnit4ClassRunner.java:291) [spring-test-5.1.9.RELEASE.jar:5.1.9.RELEASE]
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.runChild(SpringJUnit4ClassRunner.java:246) [spring-test-5.1.9.RELEASE.jar:5.1.9.RELEASE]
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.runChild(SpringJUnit4ClassRunner.java:97) [spring-test-5.1.9.RELEASE.jar:5.1.9.RELEASE]
+	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:290) [junit-4.12.jar:4.12]
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:71) [junit-4.12.jar:4.12]
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:288) [junit-4.12.jar:4.12]
+	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:58) [junit-4.12.jar:4.12]
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:268) [junit-4.12.jar:4.12]
+	at org.springframework.test.context.junit4.statements.RunBeforeTestClassCallbacks.evaluate(RunBeforeTestClassCallbacks.java:61) [spring-test-5.1.9.RELEASE.jar:5.1.9.RELEASE]
+	at org.springframework.test.context.junit4.statements.RunAfterTestClassCallbacks.evaluate(RunAfterTestClassCallbacks.java:70) [spring-test-5.1.9.RELEASE.jar:5.1.9.RELEASE]
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:363) [junit-4.12.jar:4.12]
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.run(SpringJUnit4ClassRunner.java:190) [spring-test-5.1.9.RELEASE.jar:5.1.9.RELEASE]
+	at org.junit.runner.JUnitCore.run(JUnitCore.java:137) [junit-4.12.jar:4.12]
+	at com.intellij.junit4.JUnit4IdeaTestRunner.startRunnerWithArgs(JUnit4IdeaTestRunner.java:69) [junit-rt.jar:na]
+	at com.intellij.rt.execution.junit.JUnitStarter.prepareStreamsAndStart(JUnitStarter.java:234) [junit-rt.jar:na]
+	at com.intellij.rt.execution.junit.JUnitStarter.main(JUnitStarter.java:74) [junit-rt.jar:na]
+Caused by: org.springframework.beans.factory.NoSuchBeanDefinitionException: No qualifying bean of type 'com.test.mail.service.SendMailService' available: expected at least 1 bean which qualifies as autowire candidate. Dependency annotations: {@org.springframework.beans.factory.annotation.Autowired(required=true)}
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.raiseNoMatchingBeanFound(DefaultListableBeanFactory.java:1658) ~[spring-beans-5.1.9.RELEASE.jar:5.1.9.RELEASE]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.doResolveDependency(DefaultListableBeanFactory.java:1217) ~[spring-beans-5.1.9.RELEASE.jar:5.1.9.RELEASE]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.resolveDependency(DefaultListableBeanFactory.java:1171) ~[spring-beans-5.1.9.RELEASE.jar:5.1.9.RELEASE]
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor$AutowiredFieldElement.inject(AutowiredAnnotationBeanPostProcessor.java:593) ~[spring-beans-5.1.9.RELEASE.jar:5.1.9.RELEASE]
+	... 27 common frames omitted
+21:14:02.362[INFO ][Thread-2]org.quartz.core.QuartzScheduler - Scheduler quartzScheduler_$_NON_CLUSTERED paused.
+21:14:02.367[INFO ][Thread-2]o.s.s.quartz.SchedulerFactoryBean - Shutting down Quartz Scheduler
+21:14:02.367[INFO ][Thread-2]org.quartz.core.QuartzScheduler - Scheduler quartzScheduler_$_NON_CLUSTERED shutting down.
+21:14:02.367[INFO ][Thread-2]org.quartz.core.QuartzScheduler - Scheduler quartzScheduler_$_NON_CLUSTERED paused.
+21:14:02.367[INFO ][Thread-2]org.quartz.core.QuartzScheduler - Scheduler quartzScheduler_$_NON_CLUSTERED shutdown complete.
+21:14:02.381[INFO ][Thread-2]o.s.s.c.ThreadPoolTaskExecutor - Shutting down ExecutorService 'applicationTaskExecutor'
+21:25:00.084[INFO ][main]o.s.b.t.c.SpringBootTestContextBootstrapper - Neither @ContextConfiguration nor @ContextHierarchy found for test class [com.test.mail.SendemailApplicationTestsTest], using SpringBootContextLoader
+21:25:00.089[INFO ][main]o.s.t.c.s.AbstractContextLoader - Could not detect default resource locations for test class [com.test.mail.SendemailApplicationTestsTest]: no resource found for suffixes {-context.xml, Context.groovy}.
+21:25:00.245[INFO ][main]o.s.b.t.c.SpringBootTestContextBootstrapper - Loaded default TestExecutionListener class names from location [META-INF/spring.factories]: [org.springframework.boot.test.autoconfigure.restdocs.RestDocsTestExecutionListener, org.springframework.boot.test.autoconfigure.web.client.MockRestServiceServerResetTestExecutionListener, org.springframework.boot.test.autoconfigure.web.servlet.MockMvcPrintOnlyOnFailureTestExecutionListener, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverTestExecutionListener, org.springframework.boot.test.mock.mockito.MockitoTestExecutionListener, org.springframework.boot.test.mock.mockito.ResetMocksTestExecutionListener, org.springframework.test.context.web.ServletTestExecutionListener, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener, org.springframework.test.context.support.DependencyInjectionTestExecutionListener, org.springframework.test.context.support.DirtiesContextTestExecutionListener, org.springframework.test.context.transaction.TransactionalTestExecutionListener, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener]
+21:25:00.260[INFO ][main]o.s.b.t.c.SpringBootTestContextBootstrapper - Using TestExecutionListeners: [org.springframework.test.context.web.ServletTestExecutionListener@4278284b, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener@9573584, org.springframework.boot.test.mock.mockito.MockitoTestExecutionListener@3370f42, org.springframework.boot.test.autoconfigure.SpringBootDependencyInjectionTestExecutionListener@6057aebb, org.springframework.test.context.support.DirtiesContextTestExecutionListener@63eef88a, org.springframework.test.context.transaction.TransactionalTestExecutionListener@53251a66, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener@6853425f, org.springframework.boot.test.autoconfigure.restdocs.RestDocsTestExecutionListener@352c1b98, org.springframework.boot.test.autoconfigure.web.client.MockRestServiceServerResetTestExecutionListener@21129f1f, org.springframework.boot.test.autoconfigure.web.servlet.MockMvcPrintOnlyOnFailureTestExecutionListener@5a9f4771, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverTestExecutionListener@282cb7c7, org.springframework.boot.test.mock.mockito.ResetMocksTestExecutionListener@7d898981]
+21:25:00.559[INFO ][main]c.t.m.SendemailApplicationTestsTest - Starting SendemailApplicationTestsTest on DESKTOP-Jungle with PID 16580 (started by wangjiang in E:\jungle\MyabtisTest)
+21:25:00.560[INFO ][main]c.t.m.SendemailApplicationTestsTest - No active profile set, falling back to default profiles: default
+21:25:03.034[INFO ][main]o.s.d.r.c.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode!
+21:25:03.035[INFO ][main]o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data repositories in DEFAULT mode.
+21:25:03.046[INFO ][main]o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 7ms. Found 0 repository interfaces.
+21:25:03.056[INFO ][main]o.s.d.r.c.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode!
+21:25:03.057[INFO ][main]o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data repositories in DEFAULT mode.
+21:25:03.062[INFO ][main]o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 1ms. Found 0 repository interfaces.
+21:25:03.176[WARN ][main]o.m.s.mapper.ClassPathMapperScanner - No MyBatis mapper was found in '[com.example.demo]' package. Please check your configuration.
+21:25:03.439[INFO ][main]o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'org.springframework.ws.config.annotation.DelegatingWsConfiguration' of type [org.springframework.ws.config.annotation.DelegatingWsConfiguration$$EnhancerBySpringCGLIB$$c1e06265] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+21:25:03.481[INFO ][main]o.s.w.s.a.s.AnnotationActionEndpointMapping - Supporting [WS-Addressing August 2004, WS-Addressing 1.0]
+21:25:03.503[INFO ][main]o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$1d489d66] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+21:25:04.514[INFO ][main]o.s.s.c.ThreadPoolTaskExecutor - Initializing ExecutorService 'applicationTaskExecutor'
+21:25:04.603[INFO ][main]o.s.b.a.w.s.WelcomePageHandlerMapping - Adding welcome page: ServletContext resource [/index.html]
+21:25:05.786[INFO ][main]org.quartz.impl.StdSchedulerFactory - Using default implementation for ThreadExecutor
+21:25:05.798[INFO ][main]o.quartz.core.SchedulerSignalerImpl - Initialized Scheduler Signaller of type: class org.quartz.core.SchedulerSignalerImpl
+21:25:05.798[INFO ][main]org.quartz.core.QuartzScheduler - Quartz Scheduler v.2.3.0 created.
+21:25:05.799[INFO ][main]org.quartz.simpl.RAMJobStore - RAMJobStore initialized.
+21:25:05.799[INFO ][main]org.quartz.core.QuartzScheduler - Scheduler meta-data: Quartz Scheduler (v2.3.0) 'quartzScheduler' with instanceId 'NON_CLUSTERED'
+  Scheduler class: 'org.quartz.core.QuartzScheduler' - running locally.
+  NOT STARTED.
+  Currently in standby mode.
+  Number of jobs executed: 0
+  Using thread pool 'org.quartz.simpl.SimpleThreadPool' - with 10 threads.
+  Using job-store 'org.quartz.simpl.RAMJobStore' - which does not support persistence. and is not clustered.
+
+21:25:05.799[INFO ][main]org.quartz.impl.StdSchedulerFactory - Quartz scheduler 'quartzScheduler' initialized from an externally provided properties instance.
+21:25:05.799[INFO ][main]org.quartz.impl.StdSchedulerFactory - Quartz scheduler version: 2.3.0
+21:25:05.799[INFO ][main]org.quartz.core.QuartzScheduler - JobFactory set to: org.springframework.scheduling.quartz.SpringBeanJobFactory@38410ce5
+21:25:05.943[WARN ][main]o.s.b.s.r.RedisStarterDeprecationWarningAutoConfiguration - spring-boot-starter-redis is deprecated as of Spring Boot 1.4, please migrate to spring-boot-starter-data-redis
+21:25:05.957[INFO ][main]o.s.s.quartz.SchedulerFactoryBean - Starting Quartz Scheduler now
+21:25:05.957[INFO ][main]org.quartz.core.QuartzScheduler - Scheduler quartzScheduler_$_NON_CLUSTERED started.
+21:25:05.963[INFO ][main]c.t.m.SendemailApplicationTestsTest - Started SendemailApplicationTestsTest in 5.652 seconds (JVM running for 6.483)
+21:25:26.258[INFO ][Thread-2]org.quartz.core.QuartzScheduler - Scheduler quartzScheduler_$_NON_CLUSTERED paused.
+21:25:26.263[INFO ][Thread-2]o.s.s.quartz.SchedulerFactoryBean - Shutting down Quartz Scheduler
+21:25:26.263[INFO ][Thread-2]org.quartz.core.QuartzScheduler - Scheduler quartzScheduler_$_NON_CLUSTERED shutting down.
+21:25:26.264[INFO ][Thread-2]org.quartz.core.QuartzScheduler - Scheduler quartzScheduler_$_NON_CLUSTERED paused.
+21:25:26.264[INFO ][Thread-2]org.quartz.core.QuartzScheduler - Scheduler quartzScheduler_$_NON_CLUSTERED shutdown complete.
+21:25:26.266[INFO ][Thread-2]o.s.s.c.ThreadPoolTaskExecutor - Shutting down ExecutorService 'applicationTaskExecutor'
