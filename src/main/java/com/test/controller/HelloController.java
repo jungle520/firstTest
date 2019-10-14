@@ -1,5 +1,8 @@
 package com.test.controller;
 
+import com.alibaba.fastjson.JSON;
+import com.test.entiy.User;
+import com.test.redis.jedis.RedisUtilone;
 import com.test.service.ImportService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.context.ApplicationContext;
@@ -15,7 +18,9 @@ import org.springframework.web.multipart.MultipartHttpServletRequest;
 
 import javax.servlet.http.HttpServletRequest;
 import java.io.InputStream;
+import java.util.HashMap;
 import java.util.List;
+import java.util.Map;
 
 /**
  * Created by wangjiang on 2019/9/14.
@@ -26,11 +31,15 @@ public class HelloController {
     @Autowired
     private ImportService importService;
 
+    @Autowired
+    private RedisUtilone redisUtilone;
+
     @RequestMapping("/")
     public String hello() {
 
         //AnnotationConfigApplicationContext
        // ClassPathXmlApplicationContext
+
         System.out.println("122222222222222222221");
         return "index";
     }
