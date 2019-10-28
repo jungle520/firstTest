@@ -69,7 +69,7 @@
     insert into user
     ( appid, `name`, passwd)
     values
-    <foreach collection="list" item="item" index="index" separator=",">
+    <foreach collection="list" index="index" item="item" separator=",">
       (
       #{item.appid},
       #{item.name},

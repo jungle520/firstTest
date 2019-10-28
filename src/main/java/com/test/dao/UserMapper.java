@@ -1,6 +1,6 @@
 package com.test.dao;
 
-
+import com.test.dao.User;
 import java.util.List;
 
 public interface UserMapper {
@@ -45,8 +45,5 @@ public interface UserMapper {
     int updateByPrimaryKey(User record);
 
 
-    /**
-    mybatis批量插入
-     */
-    int insertForeach(List<User> list);
+    int  insertForeach(List<User> list);
 }
